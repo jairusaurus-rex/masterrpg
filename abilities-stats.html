@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="themes/styles.css">
+<link rel="stylesheet" href="themes/old.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript/flipper.js"></script>
+<script src="javascript/calcstats.js"></script>
+
+</head>
+<body>
+	<aside>
+		<p> Menu </p>
+		<a href="https://jairusaurus-rex.github.io/masterrpg/index.html">Main</a>
+	</aside>
+	<main>
+		<h1>Abilities and Stats</h1>
+		<br>
+		<div class="space_around">
+			<button onclick="flip('calc')">Calculator </button><button onclick="flip('rules');">Rules</button>
+		</div>
+		<div id=rules class="flippage"  style="display:none">
+			<p >There are 8 ability scores in the game. They aid different skills and are needed to gain some feats. You have points for abilities equal to 20 plus your bonus plus your level. You can save some of these points in reserve or use them once you level up to level up any of those 8 abilities. You can only transfer from reserve to upgrade ability scores when you level up.</p>
+			<p >Each upgrade ability has a cost. By default, the cost is the number you are going to. If you have a strength of 5 you need to spend 6 points in your ability reserve to bring your strength to 6. This makes it easy to have low ability scores but hard to have high ability scores. </p>
+			<p> When levelling up, you can upgrade any number of ability scores and upgrade them any to any amount as long as you can afford each change form you reserve. </p>
+			<p class="c4"><span class="c6">For example, at level one, you have 23 in reserve but if you were making a level 6 character you would have 26. If you don’t spend all of the reserve in the level 6 example but save 4, when you level up to level 7, you would have 5 in reserve. In this example, if you had a strength score of 1 you can spend all 5 points to bring it up to 3.</span></p>
+			<p class="c4"><span class="c6">The stats listed are found below:</span></p>
+			<p class="c4"><span class="c6">Strength - crush a tomato</span></p>
+			<p class="c4"><span class="c6">Dexterity - dodge a tomato</span></p>
+			<p class="c4"><span class="c6">Grit - eat a rotten tomato</span></p>
+			<p class="c4"><span class="c6">Focus - throw a tomato</span></p>
+			<p class="c4"><span class="c6">Intelligence - know a tomato is a fruit</span></p>
+			<p class="c4"><span class="c6">Wit -know not to put a tomato in a fruit salad</span></p>
+			<p class="c4"><span class="c6">Charisma - sell a tomato</span></p>
+			<p class="c4"><span class="c6">Aura - summon a tomato</span></p>
+			<table class="c27"><tbody><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">New Levels </span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">Cost from the previous Levels</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">Cost from level 0</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">0</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">0</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">0</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">1</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">1</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">1</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">2</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">2</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">3</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">3</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">3</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">6</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">4</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">4</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">10</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">5</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">5</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">15</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">6</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">6</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">21</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">7</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">7</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">28</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">8</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">8</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">36</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">9</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">9</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">45</span></p></td></tr></tbody></table>
+			
+			<h1> Book 1: Core</h1>
+			<p class="c4"><span class="c6">When you level up, your stats will change (such as your health or carry capacity). Stats will change when you level up, gain more character bonuses, gain feats, or change your ability score. The default of those calculations are found below</span></p>
+			<p class="c4"><span class="c6">Max Hit Points = 10 + level + G * Bonus</span></p>
+			<p class="c4"><span class="c6">Stamina Points = G + Bonus</span></p>
+			<p class="c4"><span class="c6">Max Large Carry = 2*S + G + Bonus </span></p>
+			<p class="c4"><span class="c6">Max Small = Bonus + what your large items allow. </span></p>
+			<p class="c4"><span class="c6">Max Magical Item = A + Bonus</span></p>
+			<p class="c4"><span class="c6">Speed: 20 + *D + bonus</span></p>
+			<p class="c4"><span class="c6">Dark vision = F*5</span></p>
+			<p class="c4"><span class="c6">Starting wealth = Level * Bonus * 50 + 10 * (I+W+C)</span></p>
+			
+			<table class="c27"><tbody><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">Level</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">Starting Wealth (still add (I+W+C) times 10)</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">1</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">100</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">2</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">200</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">3</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">300</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">4</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">400</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">5</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">750</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">6</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">900</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">7</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">1050</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">8</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">1200</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">9</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">1350</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">10</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">2000</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">11</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">2200</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">12</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">2400</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">13</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">2600</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">14</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">2800</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">15</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">3750</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">16</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">4000</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">17</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">4250</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">18</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">4500</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">19</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">4750</span></p></td></tr><tr class="c11"><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c6">20</span></p></td><td class="c17" colspan="1" rowspan="1"><p class="c0"><span class="c6">6000</span></p></td></tr></tbody></table>
+			
+			<h1> Book 2: Magic and Fantasy</h1>
+			<p class="c4"><span class="c6">Spells Known = I + Bonus</span></p>
+			<p class="c4"><span class="c6">Spell Mana = A + Bonus</span></p>
+			<p class="c4"><span class="c6">Mana Recovery = Staminas</span></p>
+			<p class="c4"><span class="c6">Worthy = A + Bonus</span></p>
+			
+		</div>
+		<!-- ##################################################################################################################################### -->
+		<div id=calc class="flippage">
+			<br>
+			<div class="space_around">
+				<p>level = <input id="level_input" type=number max="20" min="0" onchange="changeEverything()" value=0></p>
+				<p>bonus = <span id=bonus_display></span></p>
+			</div>
+			<div class="space_around center_text">
+				<div>
+					<p>Stength</p>
+					<input id="strength_input" type=number max="10" min="0" onchange="changeEverything()" value=0>
+				</div>
+				<div>
+					<p>Dexterity</p>
+					<input id="dexterity_input" type=number max="10" min="0" onchange="changeEverything()" value=0>
+				</div>
+				<div>
+					<p>Grit</p>
+					<input id="grit_input" type=number max="10" min="0" onchange="changeEverything()" value=0>
+				</div>
+				<div>
+					<p>Focus</p>
+					<input id="focus_input" type=number max="10" min="0" onchange="changeEverything()" value=0>
+				</div>
+				<div>
+					<p>Intelligence</p>
+					<input id="intelligence_input" type=number max="10" min="0" onchange="changeEverything()" value=0>
+				</div>
+				<div>
+					<p>Wit</p>
+					<input id="wit_input" type=number max="10" min="0" onchange="changeEverything()" value=0>
+				</div>
+				<div>
+					<p>Charisma</p>
+					<input id="charisma_input" type=number max="10" min="0" onchange="changeEverything()" value=0>
+				</div>
+				<div>
+					<p>Aura</p>
+					<input id="aura_input" type=number max="10" min="0" onchange="changeEverything()" value=0>
+				</div>
+				<div>
+					<p>Reserve</p>
+					<p id="reserve_display"></p>
+				</div>
+			</div>
+			<h1> Book 2: Magic and Fantasy</h1>
+			<p>Max Hit Points = <span id="max_hit_points_display"></span></p>
+			<p>Stamina = <span id="stamina_display"></span></p>
+			<p>Speed = <span id="speed_display"></span></p>
+			<p>Dark Vision = <span id="dark_vision_display"></span></p>
+			<p>Large Carry = <span id="large_display"></span></p>
+			<p>Small Carry = <span id="small_display"></span></p>
+			<p>Starting Wealth = <span id="wealth_display"></span></p>
+			<h1> Book 2: Magic and Fantasy</h1>
+			<p>Spells Known = <span id="spells_known_display"></span></p>
+			<p>Spell Mana = <span id="spells_mana_display"></span></p>
+			<p>Worthy = <span id="worthy_display"></span></p>
+			
+			
+		</div>
+		
+	</main>
+</body>
+</html>

@@ -1,3 +1,35 @@
 body{
-	color:red;
+	display: flex;
+	background-color:#;
+}
+aside{
+	min-width: 150px;
+	padding:10px;
+	border:solid grey;
+	background-color:#adc1eb;s
+}
+main{
+	padding:10px;
+	border:solid lightgrey;
+	margin-left:10px;
+	background-color:#d6e0f5
+	
+}
+
+input[type=number]{
+	width:50px;
+}
+
+.space_around {
+  display: flex;
+justify-content:space-around;
+}
+
+.center_text{
+	text-align:center;
+}
+.thinborder{
+	border: solid lightgrey 1px;
+	margin-right:5px;
+	padding:0px 10px;
 }

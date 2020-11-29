@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="themes/styles.css">
+<link rel="stylesheet" href="themes/old.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript/flipper.js"></script>
+<script src="javascript/filter.js"></script>
+
+</head>
+<body>
+	<aside>
+		<p> Menu </p>
+		<a href="https://jairusaurus-rex.github.io/masterrpg/index.html">Main</a>
+	</aside>
+	<main>
+		<h1>Skills</h1>
+		<br>
+		<div class="space_around">
+			<button onclick="flip('list')">Skill List </button><button onclick="flip('rules');">Rules</button>
+		</div>
+		
+		<!-- ##################################################################################################################################### -->
+		<div id=list class="flippage" >
+			<br>
+			<select name="filter" id="filter" onchange="filter()">
+  			  	<option value="all">All</option>
+				<option value="adventuring">Adventuring</option>
+				<option value="combat">Combat</option>
+				<option value="defense">Defense</option>
+				<option value="social">Social</option>
+				<option value="senses">Senses</option>
+				<option value="knowledge">Knowledge</option>
+				<option value="magic">Magic</option>
+			</select>
+			<h1> Book 1: Core</h1>
+			<div class=space_around>
+			<div class="thinborder"><h2>Strength</h2>
+			<p>
+				<p class="filtered_object adventuring"> Athletics </p>
+				<p class="filtered_object adventuring"> Climb<sub>3</sub> </p>
+				<p class="filtered_object adventuring"> Demolition </p>
+				<p class="filtered_object combat defense"> Grapple </p>
+				<p class="filtered_object combat defense"> Shield<sub>1</sub> </p>
+				<p class="filtered_object combat"> Strike<sub>4</sub> </p>
+				<p class="filtered_object adventuring"> Swim<sub>3</sub> </p>
+				<p class="filtered_object combat"> Weapon Melee Double Handed<sub>1, 4</sub> </p>
+				<p class="filtered_object combat"> Weapon Melee Single Handed<sub>1, 4</sub> </p>
+				<p class="filtered_object combat"> Weapon Range Thrown<sub>1, 4</sub> </p>
+			</p></div>
+			<div class="thinborder"><h2>Dexterity</h2>
+			<p>
+				<p class="filtered_object adventuring"> Athletics </p>
+				<p class="filtered_object social"> Athletics </p>
+				<p class="filtered_object combat defense"> Dodge<sub>3, 4</sub> </p>
+				<p class="filtered_object adventuring"> Escape Artist </p>
+				<p class="filtered_object defense"> Reflex<sub>3, 4</sub> </p>
+				<p class="filtered_object adventuring"> Riding Saddleback </p>
+				<p class="filtered_object adventuring"> Sailing </p>
+				<p class="filtered_object adventuring"> Slight of Hand </p>
+				<p class="filtered_object adventuring"> Stealth<sub>3</sub> </p>
+				<p class="filtered_object combat"> Weapon Melee Light<sub>1, 4</sub> </p>
+			</p></div>
+			<div class="thinborder"><h2>Grit</h2>
+			<p>
+				<p class="filtered_object combat defense"> Armor<sub>2</sub> </p>
+				<p class="filtered_object defense"> Bravery </p>
+				<p class="filtered_object defense"> Fortitude </p>
+				<p class="filtered_object social"> Intimidate<sub>5</sub> </p>
+				<p class="filtered_object defense"> Stabilize </p>
+			</p></div>
+			<div class="thinborder"><h2>Focus</h2>
+			<p>
+				<p class="filtered_object defense"> Concentration </p>
+				<p class="filtered_object combat"> Initiative </p>
+				<p class="filtered_object senses"> Perception </p> 
+				<p class="filtered_object combat"> Weapon Range Archery<sub>1, 4</sub> </p>
+			</p></div>
+		</div>
+		<div class="space_around">
+			<div class="thinborder"><h2>Intelligence</h2>
+			<p>
+				<p class="filtered_object knowledge"> Appraise </p>
+				<p class="filtered_object social"> Convince<sub>5</sub> </p>
+				<p class="filtered_object adventuring"> Craft___<sub>1</sub> </p>
+				<p class="filtered_object senses"> Investigation </p> 
+				<p class="filtered_object knowledge"> Knowledge Engineering </p>
+				<p class="filtered_object knowledge"> Knowledge History </p>
+				<p class="filtered_object knowledge"> Knowledge Lore </p>
+				<p class="filtered_object knowledge"> Knowledge Nature </p>
+				<p class="filtered_object knowledge"> Knowledge Nobility </p>
+				<p class="filtered_object knowledge"> Knowledge Religion </p>
+				<p class="filtered_object defense"> Medicine </p>
+				<p class="filtered_object adventuring"> Repair___ </p>
+				<p class="filtered_object defense"> Sanity </p>
+			</p></div>
+			<div class="thinborder"><h2>Wit</h2>
+			<p>
+				<p class="filtered_object social"> Deceive<sub>5</sub> </p>
+				<p class="filtered_object social"> Disguise<sub>2, 5</sub> </p>
+				<p class="filtered_object senses"> Insight </p> 
+				<p class="filtered_object adventuring"> Jerry-rig </p>
+				<p class="filtered_object knowledge"> Knowledge Street </p>
+				<p class="filtered_object adventuring"> Lockpick<sub>2</sub> </p>
+				<p class="filtered_object adventuring"> Navigation </p>
+				<p class="filtered_object adventuring"> Tracking </p>
+				<p class="filtered_object adventuring"> Profession___ </p>
+				<p class="filtered_object adventuring"> Survival </p>
+			</p></div>
+			<div class="thinborder"><h2>Charisma</h2>
+			<p>
+				<p class="filtered_object adventuring"> Animal Handling </p>
+				<p class="filtered_object social"> Bartering<sub>5</sub> </p>
+				<p class="filtered_object social"> Charm<sub>5</sub> </p>
+				<p class="filtered_object social"> Converse<sub>5</sub> </p>
+				<p class="filtered_object social"> Leadership<sub>5</sub> </p>
+				<p class="filtered_object social"> Preform instrument___ <sub>1</sub> </p>
+				<p class="filtered_object social"> Preform Song </p>
+			</p></div>
+			<div class="thinborder"><h2>Aura</h2>
+			<p>
+				<p class="filtered_object senses"> Discernment </p> 
+				<p class="filtered_object defense"> Will Power </p>
+			</p></div>
+			</div>
+			<h1> Book 2: Magic and Fantasy</h1>
+			<div class=space_around>
+			<div class="thinborder"><h2>Focus</h2>
+			<p>
+				<p class="filtered_object combat magic"> Magic Attack<sub>3</sub> </p>
+			</p></div>
+			<div class="thinborder"><h2>Intelligence</h2>
+			<p>
+				<p class="filtered_object adventuring"> Craft Potion <sub>1</sub> </p>
+				<p class="filtered_object knowledge"> Knowledge Arcane </p>
+				<p class="filtered_object knowledge"> Knowledge Monsters </p>
+			</p></div>
+			<div class=""><h2>Aura</h2>
+			<p>
+				<p class="filtered_object adventuring magic"> Enchanting </p> 
+				<p class="filtered_object combat magic"> Magic Burst<sub>3</sub> </p>
+				<p class="filtered_object defense magic"> Magic Support<sub>3</sub> </p>
+				<p class="filtered_object adventuring magic"> Spell Craft </p> 
+			</p></div>
+			</div>
+			<p><sub>1</sub> Requires equipment to perform</p>
+			<p><sub>2</sub> The skill in nulled when used without equipment</p>
+			<p><sub>3</sub> The skill is nulled when wearing armor</p>
+			<p><sub>4</sub> The skill is nulled when prone </p>
+			<p><sub>5</sub> The skill is nulled when prone </p>
+		</div>
+		<!-- ##################################################################################################################################### -->
+		<div id=rules class="flippage" style="display:none">
+			
+			
+		</div>
+		
+	</main>
+</body>
+</html>
