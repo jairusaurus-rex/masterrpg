@@ -40,6 +40,8 @@ function changeEverything(){
 	$("#spells_known_display").text(intelligence + bonus);
 	$("#spells_mana_display").text(aura + bonus);
 	$("#worthy_display").text(aura + bonus);
+	$("#proficiencies_display").text(5 + bonus + _focus + intelligence + wit);
+	$("#feat_display").text(level*2 + bonus);
 }
 
 function calc_spent(x){
