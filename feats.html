@@ -40,6 +40,9 @@
 				<option value="_martial">Martial Arts</option>
 				<option value="_movement">Movement</option>
 				<option value="_bard">Bard</option>
+				<option value="_hunter">Hunters</option>
+				<option value="_rage">Rage</option>
+				<option value="_craft">Crafting</option>>
 			</select>
 			 Machanic <select name="filter2" id="filter2" onchange="filterThree()">
   			  	<option value="all">---</option>
@@ -51,6 +54,7 @@
 				<option value="_null">Remove Null</option>
 				<option value="_damage">Extra Damage</option>
 				<option value="_buff">Buff Points</option>
+				<option value="_usages">More Usager of Abilities</option>
 			</select>
 			 Ability <select name="filter2" id="filter3" onchange="filterThree()">
   			  	<option value="all">---</option>
@@ -245,10 +249,10 @@
 				<p class="c0"><span class="c6">You increase your darkvision by 10 feet for every tier</span></p>
 				<hr>
 			</div>
-			<div class="filtered_object _s _d _g _buff _defense _action_cost">
+			<div class="filtered_object _s _d _g _buff _combat _defense _action_cost">
 				<p><b>Defensive stance</b></p>
 				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 1, *G 1, *D 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 2, *G 2, *D 2, Lvl 8</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 3, *G 3, *D 3, Lvl 15</span></p></td></tr></tbody></table>
-				<p class="c0"><span class="c6">Tier 1 As a Major Action, you gain a buff equal to the tier until the start of your next turn for the following skills, Dodge, Armor, Shield, Reflex, Stabilize, Concentration, Fortitude, willpower, &nbsp;and any defensive grapple check. Tier 2 you can do the same as a move action, Tier 3, you can do the same as a minor action</span></p>
+				<p class="c0"><span class="c6">Tier 1 As a Major Action, you gain a buff equal to the tier until the start of your next turn for the following skills, Dodge, Armor, Shield, Reflex, Stabilize, Concentration, Fortitude, willpower, and any defensive grapple check. Tier 2 you can do the same as a move action, Tier 3, you can do the same as a minor action</span></p>
 				<hr>
 			</div>
 			<div class="filtered_object _g _defense _stats">
@@ -257,13 +261,147 @@
 				<p class="c0"><span class="c6">Add 1 to your stamina for each tier.</span></p>
 				<hr>
 			</div>
+			<div class="filtered_object _i _secondary">
+				<p><b>Educated Skill</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 4, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 5, Lvl 17 </span></p></td></tr></tbody></table>
+				<p class="c4"><span class="c6">For every Tier, pick one skill. You can add *I to that skill’s secondary ability</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _d _damage _melee _ combat">
+				<p><b>Elegant Attack</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td></tr><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 2, proficiency in Weapon Melee Light</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 4, Lvl 10</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">After attempting a successful Standard Melee Light Attack, you can use a Move Action to add more damage, Tier 1 the damage added is half your *D. Tier 2, the damage added is *D</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _g _social _secondary">
+				<p><b>Edgelord</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>*G 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">You can add *G as a secondary ability to convince, charm, and leadership.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _g _defense">
+				<p><b>Endurance</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 3, Lvl 8</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 4, Lvl 15</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Tier 1, if you are at full health at the end of a rest, you can remove 2 levels of exhaustion instead of one. Tier 2, every rest removes two levels of exhaustion instead of one. Tier 3, if you have no levels of exhaustion, you can remove 2 death points instead of one.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _reaction _g">
+				<p><b>Epic Attempt</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>*G 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">If you fail any Skill check, you can use a reaction to a reroll on the same check. You gain 2 exhaustion level when doing this.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _companion _usages">
+				<p><b>Extended Animal Tricks</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Animal Companion Tier 1</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Number of tricks you can teach your animal companion is *I doubled plus Bonus.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _hunter _usages">
+				<p><b>Extended Hunter’s Mark</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Hunter’s mark Tier 1</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Number of times you can use hunter’s mark is *W doubled plus bonus</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _bard _usages">
+				<p><b>Extended performance</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Bardic performance &nbsp;Tier 1</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Number of turns in performance is *C doubled plus bonus</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _rage _usages">
+				<p><b>Extended Rage</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Rage Tier 1</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Number of turns in rage for is *G doubled plus bonus</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _bard _usages">
+				<p><b>Extended taunts</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Taunt sentry Tier 1</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Number of times you can use taunt sentry is *C doubled plus bonus</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _stats">
+				<p><b>Extra Training</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1-Infinity</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>No requirements </span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Add the tier to your total proficiencies.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _d _defense _combat">
+				<p><b>Evasion</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td></tr><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 3</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 4, Lvl 10</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Tier 1, anytime you make a Reflex Skill Check and you succeed, taking half damage, take no damage instead. Tier 2 anytime you make a Reflex Skill Check and you fail, taking full damage, take half damage instead</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _hunter _buff _w _movement">
+				<p><b>Favoured Terrains</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 4, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 5, Lvl 17 </span></p></td></tr></tbody></table>
+				<p class="c0"><span>Create a list equal to the Tier, pick between Tundra, Desert, Forest, Jungle, Mountains, Plains, Swamp, Underground, Urban, Water to be on your list of favourite Terrains. You gain buff points equal to your Tier while on this terrain for the following checks, Survival, Initiative, Tracking, navigation. and stealth. Also it does not count as difficult terrain for combat or travel. While on that terrain, you can stealth at full speed</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _g _d _null _defense _combat">
+				<p><b>Fighting while down</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c58" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c85" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c67" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 1, *D 1</span></p></td><td class="c58" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 2, *D 2, Lvl 5</span></p></td><td class="c85" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 3, *D 3, Lvl 9</span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 4, *D 4, Lvl 13</span></p></td><td class="c67" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 5, *D 5, Lvl 17 </span></p></td></tr></tbody></table>
+				<p class="c0"><span>For each tier pick 2 skills: Any weapon, strike, dodge, reflex, grapple, or armor skills. For each choose, those skills are not nulled for being prone.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _i _craft">
+				<p><b>Forge Master</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c61" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c68" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c88" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c76" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c32" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c61" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 1, proficiency in a Craft</span></p></td><td class="c68" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 2, Lvl 5</span></p></td><td class="c88" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 3, Lvl 9</span></p></td><td class="c76" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 4, Lvl 13</span></p></td><td class="c32" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 5, Lvl 17 </span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Crafting anything you are proficient in cost 10 * Tier percent less and take 10 * Tier less time in any craft that you are proficient in.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _alchemy _combat _range">
+				<p><b>Gasser</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td></tr><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Pyro Tier 1, Chemist Tier 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Pyro Tier 2, Chemist Tier 2</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Pyro Tier 3, Chemist Tier 3</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Pyro Tier 4, Chemist Tier 4</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Any Poison you can craft can be made into a gas bomb with another hour of crafting and 100 more gold. You roll your craft poison once thrown at any space within 50 feet. All creatures that start in that space that were not already holding their breath take their fortitude check vs your craft poison check. The bomb creates a cloud with a radius around the square you targeted is 5 times the tier. The Cloud will disperse in a number of rounds equal to twice the tier. Characters can hold their breath and walk into the cloud, but if they need to breath during that time, they take effect as normal </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _w _d _f _hunter _damage _buff _combat">
+				<p><b>Hunter’s mark</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 1, *D+*F=1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 2, *D+*F = 2, </span></p><p class="c0"><span class="c6">Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 3, *D+*F =3,</span></p><p class="c0"><span class="c6">Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 4, *D+*F=4,</span></p><p class="c0"><span class="c6">Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 5, *D+*F=5,</span></p><p class="c0"><span class="c6">Lvl 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">As a minor action, choose an enemy within 25 times the tier feet. The enemy is marked. The mark lasts a day or until you mark another enemy. <br></span></p>
+				<p class="c0"><span class="c6">Weapon and strike attacks against that enemy gain a buff equal to the tier and weapons and strikes deals extra damage equal to the tier</span></p>
+				<p class="c0"><span class="c6">When using the insight or tracking skill against the marked enemy gain a buff of twice the tier</span></p>
+				<p class="c0"><span class="c6">You can use hunter’s mark for the number of turns per day equal to *W plus your Bonus.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _martial _defense _reaction _combat">
+				<p><b>Iron Fists</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>Martial Arts Tier 2 </span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">When your hands do not have any weapon or shields, you can use a reaction to use your Strike skill check like a shield.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _stats _i">
+				<p><b>Jack of all Trades</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>*I 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span>You add your intelligence to your number of proficiencies </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _martial _w _a _extra_attack _damage _combat">
+				<p><b>Ki</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Martial Arts Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Martial Arts Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Martial Arts Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Martial Arts Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Martial Arts Tier 4</span></p></td></tr></tbody></table>
+				<p class="c0"><span>You gain Ki points equal to your *W plus *A. You can use one and only one ki point after using making a Standard Attack with the Strike skill to do one of three things. (a) add free extra Strike Attacks equal to the Tier. (b) add damage equal to the Tier. (c) Make a stun attack, if your standard attack was successful, enemy must make a fortitude check vs your strike check. If you win, the enemy is disoriented.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _range _combat _d _f _primary">
+				<p><b>Knife Throwing</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>*D 2, *F 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">You can use *D or *F as Melee Ranged Thrown’s primary ability.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _combat _melee _null _martial">
+				<p><b>Knockout Artist</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>*D 2, *S 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span>When doing non lethal damage, your skill is no longer nulled for a strike attack</span></p>
+				<hr>
+			</div>
+			<h1> Book 2: Magic and Fantasy</h1>
 			<div class="filtered_object">
 				<p><b>example</b></p>
 				
 				<hr>
 			</div>
-			<h1> Book 2: Magic and Fantasy</h1>
-			
 		</div>
 		<!-- ##################################################################################################################################### -->
 		<div id=rules class="flippage" style="display:none">
