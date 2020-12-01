@@ -39,14 +39,17 @@
 				<option value="_companion">Companion</option>
 				<option value="_martial">Martial Arts</option>
 				<option value="_movement">Movement</option>
+				<option value="_bard">Bard</option>
 			</select>
 			 Machanic <select name="filter2" id="filter2" onchange="filterThree()">
   			  	<option value="all">---</option>
-				<option value="_primary_ability">Change Primary Ability score</option>
+				<option value="_primary">Change Primary Ability score</option>
 				<option value="_action_cost">Change Action Cost</option>
-				<option value="_secondary_ability">Give Secondary Ability</option>
+				<option value="_secondary">Give Secondary Ability</option>
 				<option value="_proficiencies">Increate Proficiencies</option>
 				<option value="_null">Remove Null</option>
+				<option value="_damage">Damage</option>
+				<option value="_buff">Buff Points</option>
 			</select>
 			 Ability <select name="filter2" id="filter3" onchange="filterThree()">
   			  	<option value="all">---</option>
@@ -61,7 +64,7 @@
 			</select>
 			<button onclick="resetThree();filterThree();">Reset</button>
 			<h1> Book 1: Core</h1>
-			<div class="filtered_object _primary_ability">
+			<div class="filtered_object _primary">
 			<p class="c4"><span class="c20 c14">Alternative method</span></p>
 			<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Level 10</span></p></td></tr></tbody></table>
 			<p class="c0"><span class="c6">You can change the primary ability of a skill to a different ability of your choice</span></p>
@@ -83,14 +86,14 @@
 				<p class="c0"><span class="c6">This feat gives you only one animal. If you want a different animal, you must release that animal to the wild.</span></p>
 				<hr>
 			</div>
-			<div class="filtered_object _d _g _defense _null _combat">
+			<div class="filtered_object _d _g _defense _null _combat _movement">
 				<p><b>Armor Expert</b></p>
 				<table class="c27"><tbody><tr class="c11"><td class="c66" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c82" colspan="1" rowspan="1"><p class="c0"><span class="c6">Ter 2</span></p></td><td class="c71" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4 </span></p></td><td class="c75" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c66" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G1, D1, Proficiency in armor</span></p></td><td class="c82" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G2, &nbsp;*D2, Lvl 5</span></p></td><td class="c71" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G3, &nbsp;*D3, Lvl 9</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G4, &nbsp;*D4,Lvl 13</span></p></td><td class="c75" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G5, &nbsp;*D5, Lvl 17</span></p></td></tr></tbody></table>
 				<p class="c0"><span class="c6">For each tier, pick a skill; dodge, reflex, stealth, climb, or swim. Each chosen skill are no longer nulled when wearing armor.</span></p>
 				<p class="c0"><span class="c6">If the weight of the armor is the tier or less, you can dash even while wearing that armor</span></p>
 				<hr>
 			</div>
-			<div class="filtered_object _martial _melee _combat">
+			<div class="filtered_object _martial _melee _combat _damage">
 				<p><b>Assassin</b></p>
 				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Backstab Tier 3, Martial Arts Tier 3</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Backstab Tier 6, Martial Arts Tier 6</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Backstab Tier 9, Martial Arts Tier 9</span></p></td></tr></tbody></table>
 				<p class="c0"><span class="c6">When you trigger a backstab, your target gains a death point equal to the tier. If you are attacking a creature or something else that does not use death points, you instead deal extra damage equal to the tier times bonus.</span></p>
@@ -106,6 +109,51 @@
 				<p><b>Awareness</b></p>
 				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span>*F 3</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*F 4, Lvl 10</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*F 5, Lvl 19</span></p></td></tr></tbody></table>
 				<p class="c0"><span class="c6">Tier 1, You gain one extra reaction every turn for a max of two reactions. Tier 2 You gain one extra reaction every turn for a max of Three reactions, Tier 3, You gain one extra reaction every turn for a max of Four reactions</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _d _w _combat _melee _damage">
+				<p><b>Backstab</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c65" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c64" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c68" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c82" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c65" colspan="1" rowspan="1"><p class="c0"><span class="c6">Proficiency in stealth, *D + *W = 1</span></p></td><td class="c64" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D +*W = 2,</span></p><p class="c0"><span class="c6">Level 3</span></p></td><td class="c68" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D +*W = 3,</span></p><p class="c0"><span class="c6">Level 5</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D +*W = 4,</span></p><p class="c0"><span class="c6">Level 7</span></p></td><td class="c82" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D +*W = 5,</span></p><p class="c0"><span class="c6">Level 9</span></p></td></tr></tbody></table>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 10</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D +*W = 6,</span></p><p class="c0"><span class="c6">Level 11</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D +*W = 7,</span></p><p class="c0"><span class="c6">Level 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D +*W = 8,</span></p><p class="c0"><span class="c6">Level 15</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D +*W = 9,</span></p><p class="c0"><span class="c6">Level 17</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D +*W = 10,</span></p><p class="c0"><span class="c6">Level 19</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">If you attack an enemy that you have snuck up on, or you are flanking, or do not know you were there or has the disoriented condition, or has the prone condition you can add extra damage up to the Tier. This will not work with any attack that uses strength as it's primary ability.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _c _bard _buff">
+				<p><b>Bardic Performance</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C4, Lvl 14</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C5, Lvl 18</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">With any instrument you are proficient in, you can use a major action to start your bardic performance. You can use a minor action each turn after to continue it as long as you are still holding your instrument throwout your turn. You can end it as a free action. </span></p>
+				<p class="c0"><span class="c6">It takes two hands to play an instrument. You cannot hold any weapon or other object, but you can take a hand off your instrument for a moment to perform other tasks other than holding an object. Examples are casting spells, drinking medicine, or punching. </span></p>
+				<p class="c0"><span class="c6">You can use bardic performance for the number of turns per day equal to *C plus your Bonus. </span></p>
+				<p class="c0"><span class="c6">While performing, until your next turn, any alley that can hear your performance gains a buff on all skill checks equal to your bardic performance tier.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _f _w _d _combat _defense _buff _melee">
+				<p><b>Blade Dancer</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>*F2, *W 2, *D 3, Proficiency in Dance</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">You cannot be flanked. </span></p>
+				<p class="c0"><span class="c6">When an enemy attacks you, you gain a buff to dodge, shield and redirect shot equal to the enemies within 5 feet of you other than the attacking enemy.</span></p>
+				<p class="c0"><span class="c6">If you are flanking an enemy, you gain additional buffs on attacks against that enemy for each enemy within 5 feet of you other than the enemy you are attacking</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _secondary _w _c">
+				<p><b>Born Poor</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Must be taken at character creation</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Half starting wealth</span></p>
+				<p class="c0"><span>Choose two skills, you can add *C or *W as its secondary ability to those skills</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _secondary _w _c _i">
+				<p><b>Born Poor</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Must be taken at character creation</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Double starting wealth</span></p>
+				<p class="c0"><span>Choose a skill that has *I or W as its primary ability, that skill can use *C as its secondary ability. </span></p>
+				<p class="c0"><span>Choose a skill that has *C as its primary ability, that skill can use *I or *W as its secondary ability. </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _secondary _reaction _g _defense _combat">
+				<p><b>Brace for Impact</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>*G 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">When taking damage that would lead to negative hit points, you can use your reaction to use your *G as a secondary ability for the concentration check to stay conscious.</span></p>
 				<hr>
 			</div>
 			<div class="filtered_object">
