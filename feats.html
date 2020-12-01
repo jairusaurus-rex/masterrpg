@@ -43,12 +43,13 @@
 			</select>
 			 Machanic <select name="filter2" id="filter2" onchange="filterThree()">
   			  	<option value="all">---</option>
+				<option value="_extra_attack">More Attacks</option>
 				<option value="_primary">Change Primary Ability score</option>
 				<option value="_action_cost">Change Action Cost</option>
 				<option value="_secondary">Give Secondary Ability</option>
 				<option value="_proficiencies">Increate Proficiencies</option>
 				<option value="_null">Remove Null</option>
-				<option value="_damage">Damage</option>
+				<option value="_damage">Extra Damage</option>
 				<option value="_buff">Buff Points</option>
 			</select>
 			 Ability <select name="filter2" id="filter3" onchange="filterThree()">
@@ -143,7 +144,7 @@
 				<hr>
 			</div>
 			<div class="filtered_object _secondary _w _c _i">
-				<p><b>Born Poor</b></p>
+				<p><b>Born Wealthy</b></p>
 				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Must be taken at character creation</span></p></td></tr></tbody></table>
 				<p class="c0"><span class="c6">Double starting wealth</span></p>
 				<p class="c0"><span>Choose a skill that has *I or W as its primary ability, that skill can use *C as its secondary ability. </span></p>
@@ -154,6 +155,88 @@
 				<p><b>Brace for Impact</b></p>
 				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>*G 2</span></p></td></tr></tbody></table>
 				<p class="c0"><span class="c6">When taking damage that would lead to negative hit points, you can use your reaction to use your *G as a secondary ability for the concentration check to stay conscious.</span></p>
+				<hr>
+			</div>
+			</div>
+			<div class="filtered_object _d _f _w _combat _defense _reaction">
+				<p><b>Catch Projectile</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td></tr><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 3, *F + *W = 3</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 4, *F + *W = 4, Lvl 10</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Tier 1: If someone is making a ranged attack that uses a bolt or arrow and you have a free hand, you can use Reaction to make a Reflex check vs that attack. If you succeed, you catch the arrow in your free hand. </span></p>
+				<p class="c0"><span class="c6">Tier 2, with the same Reaction action you can make a Weapon Range Thrown against any creature to throw the bolt or arrow. The damage is the same as the half shot fired.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _movement _action_cost _primary _g _s">
+				<p><b>Cavalier</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Proficiency in Riding Saddleback</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">When making a handle animal check with a create meant to be ridden, you can use your Riding Saddleback skill check instead</span></p>
+				<p class="c0"><span class="c6">Your can use your *G or *S as a primary ability with your Riding Saddleback check. </span></p>
+				<p class="c0"><span class="c6">Your mount gainst 5 more feet of speed.</span></p>
+				<p class="c0"><span class="c6">Mounting a creature meant to be ridden costs a minor action. Dismounting is now a free action.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _c _secondary _social">
+				<p><b>Center of Attention</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>*C 3</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">You can add *C as a secondary ability to intimidate, convince, disguise, and deceive checks </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _melee _combat _d _movement">
+				<p><b>Charge</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>*D 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">When making a standard melee attack, you can use half your speed movement in a straight line at the same time.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _alchemy _i _buff">
+				<p><b>Chemist</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1 </span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td></tr><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Proficiency in Craft Potion, *I 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 2, Lvl 6</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 3, Lvl 11</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 4, Lvl 16</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">You can create poisons and medicines. Poisons are without the roll. When a person drinks or eats food laced with it. &nbsp;your poison, you roll a Craft Potion check vs their Fortitude check. All poisons and medicine cost 20 times the tier of their effect. All poisons and medicine take an hour to craft. Craft Potion check vs 10, if you fail the potion is not crafted and you still lose the cost. &nbsp;</span></p>
+				<p class="c0"><span class="c6">Tier 1, create an unconscious potion that last as many hours as the tier. Those that are poisoned only have one chance to save against it. &nbsp;You can also create a medicine that can awaken an unconscious person. Roll a Medicine Check vs 10 to awaken them</span></p>
+				<p class="c0"><span class="c6">Tier 2, Create a poison that causes sickness for days equal to twice the tier. Every day, they can retake their roll against your first roll to remove it. You can also craft alchemist fires for 50 gold. It takes one hour to chraft.</span></p>
+				<p class="c0"><span class="c6">Tier 3, Create a poison that causes a disease for days equal to triple the tier. Every day, they can retake their roll against you to remove it. You can also create a medicine that gives a buff to everyone trying to remove diseases. If drinken, the next time someone with disease makes a fortitude save against it, they gain a buff up to the tier. </span></p>
+				<p class="c0"><span class="c6">Tier 4, Create a poison that causes the poisoned person to gain a death point every turn for a number of turns equal to the tier. This poison is a persistent condition. You can also create a medicine that gives you a buff to remove poison. One drink will give you a buff to all fortitude saves against poison for a number of minutes equal to the tier. The buff is equal to the tier.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _s _combat _melee _extra_attact">
+				<p><b>Cleave</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 3, Lvl &nbsp;9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 4, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S, Lvl 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">After a Standard Melee Attack, you can use a Move Action to start to cleave. Cleave lets you take an extra melee attack.. <br></span></p>
+				<p class="c0"><span class="c6">Each time you make an extra melee attack with cleave, you must target a different creature than the one you targeted with the standard melee attack and ones you targeted with the same cleave</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _g _defense">
+				<p><b>Climate training</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td></tr><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 2</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 4, Lvl 10</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">For each Tier, pick either cold or hot. Each chosen will reduce climate degrees by 1 for that choice.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _c _companion">
+				<p><b>Cohort</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c6">Level 10, *C 4. Proficiency in Leadership</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">You gain a soldier to follow you. You can only have one Cohort at a time. To gain followers, you must go to a populated urban area and search for someone to go on adventures with you. This takes 24 hours and you must make a Leadership check vs 20, if you fail you wasted a day. <br><br>Your cohort’s level is your bonus. You can build that character how you want with the following restrictions. Their *I, *w, *C are all 0 and they cannot have feats. <br><br>The Cohort, like animal companions, are run by the Game Master, but you can make a minor action to give the cohort an order. Otherwise the Cohort will work in their best interest. </span></p>
+				<p class="c0"><span class="c6">If you order them into a dangerous task, you must make a Leadership Check vs 15. If you order them into a task that </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _s _d _combat _melee">
+				<p><b>Combat Maneuver</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Proficiency in Grapple, *S 1, *D 1, </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 2, *D 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 3, *D 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 4, *D 4, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 5, *D 5, Lvl 17 </span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Each tier, you can add to your grapple choices one of the following; Dirty trick, Disarm, Push, Sudder, Trip. Anytime you want to do a grapple, you can choose to do any of your choices instead. Anything that benefits grapple, benefits your combat maneuver. The check is still grapple vs grapple. You can only grapple someone your size or smaller.</span></p>
+				<p class="c0"><span class="c6">Dirty Trick: If you win, the enemies next attack or defence attack has a debuff equal to your *S plus your *D</span></p>
+				<p class="c0"><span class="c6">Disarm: If you win and the enemy that has a weapon, the weapon is removed and falls in a space 5 feet from the enemy</span></p>
+				<p class="c0"><span class="c6">Push: if you winYou push the enemy away from you in a distance in feet equal to *S plus *D rounded up to the nearest 5</span></p>
+				<p class="c0"><span class="c6">Sudder: If you win and the enemy has a weapon, the weapon gains the broken condition. </span></p>
+				<p class="c0"><span class="c6">Trip: If you win, the enemy is knock down and is prone</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _g _f _null _defense">
+				<p><b>Cool Under Pressure</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">G1, F1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">G2, F2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">G3, F3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">G4, F4, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">G5, F5, Lvl 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">For each tier, choose a skill. Each chosen skill is no longer nulled when your negative hit points (in absolute value) are greater than your stamina or when you have more exhaustion levels than your stamina.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _c _bard _reaction _defense">
+				<p><b>Counter Song</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Bardic Performance Tier 1</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">As a reaction, you can spend one of your bardic performances to counter any mind effect, fear, charm, or mind control on all allies.</span></p>
 				<hr>
 			</div>
 			<div class="filtered_object">
