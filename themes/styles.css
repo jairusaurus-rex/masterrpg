@@ -1,18 +1,20 @@
 body{
 	display: flex;
-	background-color:#;
+	justify-content :center;
+	background-color:#003380;
 }
 aside{
 	min-width: 150px;
 	padding:10px;
 	border:solid grey;
-	background-color:#adc1eb;s
+	background-color:#b3d1ff;s
 }
 main{
+	width:700px;
 	padding:10px;
 	border:solid lightgrey;
 	margin-left:10px;
-	background-color:#d6e0f5
+	background-color:#cce0ff
 	
 }
 

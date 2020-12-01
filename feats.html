@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="themes/styles.css">
+<link rel="stylesheet" href="themes/old.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript/flipper.js"></script>
+<script src="javascript/filter.js"></script>
+
+</head>
+<body>
+	<aside>
+		<p> Menu </p>
+		<a href="https://jairusaurus-rex.github.io/masterrpg/index.html"><p>Main</p></a>
+		<a href="abilities-stats.html"><p>Abilities and Stats</p></a>
+		<a href="skills.html"><p>Skills</p></a>
+		<a href="feats.html"><p>Feats</p></a>
+	</aside>
+	<main>
+		<h1>Skills</h1>
+		<br>
+		<div class="space_around thinborder">
+			<button onclick="flip('list')">Skill List </button><button onclick="flip('rules');">Rules</button>
+		</div>
+		
+		<!-- ##################################################################################################################################### -->
+		<div id=list class="flippage" >
+			<br>
+			<p> Filter </p>
+			 Theme <select name="filter1" id="filter1" onchange="filterThree()">
+  			  	<option value="all">---</option>
+				<option value="_combat">Combat</option>
+				<option value="_melee">Melee</option>
+				<option value="_range">Range</option>
+				<option value="_social">Social</option>
+				<option value="_defense">Defense</option>
+				<option value="_reaction">Reaction</option>
+				<option value="_magic">Magic</option>
+				<option value="_companion">Companion</option>
+				<option value="_martial">Martial Arts</option>
+				<option value="_movement">Movement</option>
+			</select>
+			 Machanic <select name="filter2" id="filter2" onchange="filterThree()">
+  			  	<option value="all">---</option>
+				<option value="_primary_ability">Change Primary Ability score</option>
+				<option value="_action_cost">Change Action Cost</option>
+				<option value="_secondary_ability">Give Secondary Ability</option>
+				<option value="_proficiencies">Increate Proficiencies</option>
+				<option value="_null">Remove Null</option>
+			</select>
+			 Ability <select name="filter2" id="filter3" onchange="filterThree()">
+  			  	<option value="all">---</option>
+				<option value="_s">Strength</option>
+				<option value="_d">Dexterity</option>
+				<option value="_g">Grit</option>
+				<option value="_f">Focus</option>
+				<option value="_i">Intelligence</option>
+				<option value="_w">Wit</option>
+				<option value="_c">Charisma</option>
+				<option value="_a">Aura</option>
+			</select>
+			<button onclick="resetThree();filterThree();">Reset</button>
+			<h1> Book 1: Core</h1>
+			<div class="filtered_object _primary_ability">
+			<p class="c4"><span class="c20 c14">Alternative method</span></p>
+			<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>Level 10</span></p></td></tr></tbody></table>
+			<p class="c0"><span class="c6">You can change the primary ability of a skill to a different ability of your choice</span></p>
+			<hr>
+			</div>
+			<div class="filtered_object _f _w _d _defense">
+				<p ><b>Always Alert</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>*F 4, *W 3, *D 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span>You cannot be disoriented</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _c _companion">
+				<p><b>Animal Companion    </b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 4, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C5, Level 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">You can find an animal companion. The Creature points are equal to the tier. It takes 24 hours to find an animal in that terrain and a Handle Animal Check vs 20, if you fail you wasted a day. </span></p>
+				<p class="c0"><span class="c6">The companion animal has a threat level equal to the tier</span></p>
+				<p class="c0"><span class="c6">You can teach it *I plus Bonus number of tricks. It takes 24 hours to teach an animal a trick and a Handle Animal Check vs 10 + tricks already known, if you fail you wasted a day. </span></p>
+				<p class="c0"><span class="c6">You can use a minor action to give a command to your animal to do one of their tricks</span></p>
+				<p class="c0"><span class="c6">This feat gives you only one animal. If you want a different animal, you must release that animal to the wild.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _d _g _defense _null _combat">
+				<p><b>Armor Expert</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c66" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c82" colspan="1" rowspan="1"><p class="c0"><span class="c6">Ter 2</span></p></td><td class="c71" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4 </span></p></td><td class="c75" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c66" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G1, D1, Proficiency in armor</span></p></td><td class="c82" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G2, &nbsp;*D2, Lvl 5</span></p></td><td class="c71" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G3, &nbsp;*D3, Lvl 9</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G4, &nbsp;*D4,Lvl 13</span></p></td><td class="c75" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G5, &nbsp;*D5, Lvl 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">For each tier, pick a skill; dodge, reflex, stealth, climb, or swim. Each chosen skill are no longer nulled when wearing armor.</span></p>
+				<p class="c0"><span class="c6">If the weight of the armor is the tier or less, you can dash even while wearing that armor</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _martial _melee _combat">
+				<p><b>Assassin</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Backstab Tier 3, Martial Arts Tier 3</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Backstab Tier 6, Martial Arts Tier 6</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Backstab Tier 9, Martial Arts Tier 9</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">When you trigger a backstab, your target gains a death point equal to the tier. If you are attacking a creature or something else that does not use death points, you instead deal extra damage equal to the tier times bonus.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _d _w _combat _movement">
+				<p><b>Attack Step</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c26" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span>*D3, W*2</span></p></td></tr></tbody></table>
+				<p class="c0"><span>When you successfully attack an enemy, you can make a free five foot move in any direction and that enemy cannot make an attack of opportunity against you</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _f _reaction">
+				<p><b>Awareness</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span>*F 3</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*F 4, Lvl 10</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*F 5, Lvl 19</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Tier 1, You gain one extra reaction every turn for a max of two reactions. Tier 2 You gain one extra reaction every turn for a max of Three reactions, Tier 3, You gain one extra reaction every turn for a max of Four reactions</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object">
+				<p><b>example</b></p>
+				
+				<hr>
+			</div>
+			<h1> Book 2: Magic and Fantasy</h1>
+			<div class=space_around>
+			<div class="thinborder"><h2>Focus</h2>
+			<p>
+				<p class="filtered_object combat magic"> Magic Attack<sub>3</sub> </p>
+			</p></div>
+			<div class="thinborder"><h2>Intelligence</h2>
+			<p>
+				<p class="filtered_object adventuring"> Craft Potion <sub>1</sub> </p>
+				<p class="filtered_object knowledge"> Knowledge Arcane </p>
+				<p class="filtered_object knowledge"> Knowledge Monsters </p>
+			</p></div>
+			<div class=""><h2>Aura</h2>
+			<p>
+				<p class="filtered_object adventuring magic"> Enchanting </p> 
+				<p class="filtered_object combat magic"> Magic Burst<sub>3</sub> </p>
+				<p class="filtered_object defense magic"> Magic Support<sub>3</sub> </p>
+				<p class="filtered_object adventuring magic"> Spell Craft </p> 
+			</p></div>
+			</div>
+			<p><sub>1</sub> Requires equipment to perform</p>
+			<p><sub>2</sub> The skill in nulled when used without equipment</p>
+			<p><sub>3</sub> The skill is nulled when wearing armor</p>
+			<p><sub>4</sub> The skill is nulled when prone </p>
+			<p><sub>5</sub> The skill is nulled when prone </p>
+		</div>
+		<!-- ##################################################################################################################################### -->
+		<div id=rules class="flippage" style="display:none">
+			<p class="c4"><span class="c6">Anything you do that requires &nbsp;roll is a Skill Check. This includes attack and defending checks. There are 5 numbers calculated in a check that is added to a 20 sided dice. However, most of these skills only require one ability score added to a d20. Therefore you should only write done skills that you have changed to proficiencies and feats. Your GM will announce skills so you should have to remember all of the ones you have not altered this way. For example, for an intimidate check, the GM will say “Roll Intimate or Grit” If you didn’t alter intimate, you won’t have written in on your sheet and would just roll a d20 and add your Grit. </span></p>
+			
+			<p class="c4"><span class="c6">There are 5 things a skill has to add to your d20, Primary ability, secondary ability, Proficiency, Total buff points, and today debuff points (The last one is subtracted from the roll.)</span></p>
+			<h1 class="c16" id="h.6463uvc6fcap"><span class="c18">Primary &nbsp;Ability</span></h1>
+			<p class="c4"><span class="c6">At the very least, every skill has a primary ability score. Each has a defaulted ability score but you can change it through feats. You cannot have more than one ability score be a primary ability score</span></p>
+			<h1 class="c16" id="h.50iruxekg8rn"><span class="c18">Secondary Ability </span></h1>
+			<p class="c4"><span class="c6">You can add a secondary ability score to a skill through feats. If you have more than one feat that gives a skill a secondary ability score, you must choose one and only one of those secondary ability scores. You cannot have a skill with more than one secondary ability score.</span></p>
+			<h1 class="c16" id="h.m4h7w78a6vrc"><span class="c18">Proficiency</span></h1>
+			<p class="c4"><span class="c6">Proficiencies are skills that your character is proficient in. Every character has proficiencies equal to their intelligence, wit, charisma, bonus plus five. This number can also increase due to some feats. Every time you level up you must choose new proficiency equal to that number.</span></p>
+			<p class="c4"><span class="c6">If you have a skill with a proficiency, you add your character bonus to that skill roll.</span></p>
+			<h1 class="c16" id="h.4s6elf20a9wr"><span class="c18">Buff &nbsp;or Debuff </span></h1>
+			<p class="c4"><span class="c6">Buffs and Debuffs are situational or feat given additions or subtractions to a skill check. The greatest, or worst, part is, unlike the rest, they stack on each other. Everything that gives you a buff is added together and put in your skill check. But everything that gives you a debuff is added together then is minused to your skill check.</span></p>
+			<p class="c4"><span class="c6">Your total between buff and debuff cannot be greater than your bonus or less than your negative 5.</span></p>
+			<h1 class="c16" id="h.3ly23gka9oc9"><span class="c18">Nulled!</span></h1>
+			<p class="c4"><span class="c6">When a skill is nulled, usually due to some effect or due to using a skill improperly, That skill cannot use the proficiency or secondary ability, even if they are attached to the skill. Instead, just count the primary plus the buffs and debuffs.</span></p>
+			<p class="c4"><span class="c6">Creatures that have skilled that are nulled take 5 debuffs instead</span></p>
+			
+			
+		</div>
+		
+	</main>
+</body>
+</html>
