@@ -55,6 +55,7 @@
 				<option value="_damage">Extra Damage</option>
 				<option value="_buff">Buff Points</option>
 				<option value="_usages">More Usager of Abilities</option>
+				<option value="_immunity">Gain Immunity</option>
 			</select>
 			 Ability <select name="filter2" id="filter3" onchange="filterThree()">
   			  	<option value="all">---</option>
@@ -68,6 +69,7 @@
 				<option value="_a">Aura</option>
 			</select>
 			<button onclick="resetThree();filterThree();">Reset</button>
+<!-- C O R E -->
 			<h1> Book 1: Core</h1>
 			<div class="filtered_object _primary">
 			<p class="c4"><span class="c20 c14">Alternative method</span></p>
@@ -189,7 +191,7 @@
 				<p class="c0"><span class="c6">When making a standard melee attack, you can use half your speed movement in a straight line at the same time.</span></p>
 				<hr>
 			</div>
-			<div class="filtered_object _alchemy _i _buff">
+			<div class="filtered_object _alchemy _i _buff _craft">
 				<p><b>Chemist</b></p>
 				<table class="c27"><tbody><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1 </span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td></tr><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Proficiency in Craft Potion, *I 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 2, Lvl 6</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 3, Lvl 11</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 4, Lvl 16</span></p></td></tr></tbody></table>
 				<p class="c0"><span class="c6">You can create poisons and medicines. Poisons are without the roll. When a person drinks or eats food laced with it. &nbsp;your poison, you roll a Craft Potion check vs their Fortitude check. All poisons and medicine cost 20 times the tier of their effect. All poisons and medicine take an hour to craft. Craft Potion check vs 10, if you fail the potion is not crafted and you still lose the cost. &nbsp;</span></p>
@@ -266,7 +268,7 @@
 				<p class="c4"><span class="c6">For every Tier, pick one skill. You can add *I to that skill’s secondary ability</span></p>
 				<hr>
 			</div>
-			<div class="filtered_object _d _damage _melee _ combat">
+			<div class="filtered_object _d _damage _melee _combat">
 				<p><b>Elegant Attack</b></p>
 				<table class="c27"><tbody><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td></tr><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 2, proficiency in Weapon Melee Light</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 4, Lvl 10</span></p></td></tr></tbody></table>
 				<p class="c0"><span class="c6">After attempting a successful Standard Melee Light Attack, you can use a Move Action to add more damage, Tier 1 the damage added is half your *D. Tier 2, the damage added is *D</span></p>
@@ -395,6 +397,152 @@
 				<p class="c0"><span>When doing non lethal damage, your skill is no longer nulled for a strike attack</span></p>
 				<hr>
 			</div>
+			<div class="filtered_object _w _secondary">
+				<p><b>Lore Master</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td></tr><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 2, Lvl 6</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 3, Lvl 11</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 4, Lvl 16</span></p></td></tr></tbody></table>
+				<p class="c0"><span>Choose knowledge skills equal to twice the tier. Add *W as a secondary ability to any knowledge checks you chose.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _s _range _combat">
+				<p><b>Long Shot</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 4, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 5, Lvl &nbsp;17</span></p></td></tr></tbody></table>
+				<p class="c0"><span>Range on all bows, crossbows and thrown weapons increases by 5 for every *S plus Tier</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _c">
+				<p><b>Lucky</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 4, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*C 5, Lvl &nbsp;17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">You can reroll any skill that rolls a 1. You can perform this up for a Max of the Tier amount. After a rest you regain one of these rerolls. </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _martial _d _s _w _damage _null _primary _combat _melee">
+				<p><b>Martial Arts</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c65" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c64" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c68" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c82" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c65" colspan="1" rowspan="1"><p class="c0"><span class="c6">Proficiency in Strike, *S+*D+*W = 1</span></p></td><td class="c64" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S+*D+*W = 2,</span></p><p class="c0"><span class="c6">Level 3</span></p></td><td class="c68" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S+*D+*W = 3,</span></p><p class="c0"><span class="c6">Level 5</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S+*D+*W = 4,</span></p><p class="c0"><span class="c6">Level 7</span></p></td><td class="c82" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S+*D+*W = 5,</span></p><p class="c0"><span class="c6">Level 9</span></p></td></tr></tbody></table>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 10</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S + *D +*W = 6,</span></p><p class="c0"><span class="c6">Level 11</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S + *D +*W = 7,</span></p><p class="c0"><span class="c6">Level 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S + *D +*W = 8,</span></p><p class="c0"><span class="c6">Level 15</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S + *D +*W = 9,</span></p><p class="c0"><span class="c6">Level 17</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S+*D +*W = 10,</span></p><p class="c0"><span class="c6">Level 19</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">When hitting an enemy with a Strike skill Check, add Tier to damage. </span></p>
+				<p class="c0"><span class="c6">Your off hand attack is no longer nulled and no longer as a minus 1 damage penalty while using Strike skill check.</span></p>
+				<p class="c0"><span class="c6">Strike checks primary ability score can now be *D.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _martial _defense _secondary combat">
+				<p><b>Martial Defense</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span class="c6">Martial Arts Tier 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span>When you are not wearing armor or wield a shield, you can use *W as your secondary ability for your Dodge and Reflex checks. </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _buff">
+				<p><b>Maximum Effort</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">none</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Lvl 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span>Your maximum buff for skills increases by the tier. </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _combat _defense _action_cost">
+				<p><b>Medic</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>Proficiency in Medicine</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">You can perform a ‘heal other’ on yourself the same way you would heal someone else. </span></p>
+				<p class="c0"><span class="c6">When healing someone else, you can use a minor action instead and they suffer no damage if you fail. </span></p>
+				<p class="c0"><span>When forcing a helpless person to drink, you spend your Move action instead of a major.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _movement _g _w _f">
+				<p><b>Mobility</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G + *F + *W = 3</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G + *F + *W = 6, Lvl 8</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G + *F + *W = 9, Lvl 15</span></p></td></tr></tbody></table>
+				<p class="c0"><span>For each tier, choose *G, *F, and *W. Each choice must be different for each tier. Add the chosen abilities to your speed.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _combat _d _extra_attack _action_cost">
+				<p><b>Multiattack</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td></tr><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 2, Lvl 7</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">D* 3, Lvl 13</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">D* 4, Lvl 19</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Gain more attacks per turn if you use a Standard Attack. All extra attacks must be rolled separately skill check. You must use the same type of attack and all extra attacks with this ability must target the SAME creature your standard attack did </span></p>
+				<p class="c0"><span class="c6">Tier 1, After attempting a Standard Attack, you can use a Move Action to make another attack against the SAME creature. </span></p>
+				<p class="c0"><span class="c6">Tier 2, The cost of this multiattack is reduced to a Minor Action, you can use it as many times as you can. </span></p>
+				<p class="c0"><span class="c6">Tier 3, if you use a Move Action for the cost of this ability, you can also gain an additional extra attack besides the one you use with the Move Action. </span></p>
+				<p class="c0"><span>Tier 4. Every time you use a Standard Attack, you gain one extra attack for free. You can still spend Minor actions to get more extra attacks. </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _social _i">
+				<p><b>Multilingual</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td></tr><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I &nbsp;1</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*I 2, Lvl 10</span></p></td></tr></tbody></table>
+				<p class="c0"><span>For each Tier, choose between *I or Bonus. &nbsp;Each choice must be different for each tier. The number of languages you know increase by selected numbers.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _bard _social _secondary _i _c">
+				<p><b>Music Theory</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>*I2, *C2</span></p></td></tr></tbody></table>
+				<p class="c0"><span>You can add *I as a secondary ability to all performance skills.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _c">
+				<p><b>Naturally Talented</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>*C2</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Pick a feat you have at least one tier in. For all requirements with an equation (‘=’ sign), you can add your *C to all of those requirements (left side of that equation) for all Tiers of that one feat. </span></p>
+				<p class="c0"><span>For example, if the feat has a requirement of ‘=G + 2’ it now becomes ‘=G + 2 + C’ and/or if it has a requirement of ‘=C - 2’ is now ‘C - 2 + C’</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _stats _g">
+				<p><b>Pack Mule</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>*G 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span>Your carry large capacity uses double *G instead of one *G</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _reaction _combat _melee _defense _d _action_cost">
+				<p><b>Parry</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td></tr><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D &nbsp;3</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">*D 6, Lvl 10</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">With a light melee weapon in your primary hand and attacked with a melee weapon, you can use a reaction to use your Weapon skill check like a shield. If successful you can use another reaction to make an extra attack with the weapon you defended with targeting the same enemy that tried to attack you. </span></p>
+				<p class="c0"><span>Tier 2, If your parry is successful, the extra attack is now a free action, making the parry and extra attack cost one reaction</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _combat _range _d _f">
+				<p><b>Pistoleer</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>*D 2, *F 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">If a ranged weapon can be held in one hand, it can be used as an off hand attack regardless of the weapon skill.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _alchemy _combat _action_cost">
+				<p><b>Poison Assassin</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td></tr><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Chemist Tier 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Chemist Tier 2</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Chemist Tier 3</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Chemist Tier 4</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">Tier 1: Any poison can be put on a weapon or ammo (not a bullet) as a major action. It lasts as many minutes as the tier or until you successfully hit someone. The first person hit with a poisoned weapon or a poisoned ammo makes the skill checks as though they ate or drank </span></p>
+				<p class="c0"><span>Tier 2 you can do this as a move action, tier 3, a minor action, tier 4 a free action </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _d _s _reaction _combat _melee">
+				<p><b>Pole Arm Expert</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>*S 2, *D 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span>When you are wielding a weapon with reach and you have proficiency in, You can do an Attack of opportunity for any space 10 feet from you.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _s _melee _combat _damage">
+				<p><b>Power Attack</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 4, Lvl 8</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*S 6, Lvl 15</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c6">After attempting a successful Standard Melee Light Attack, you can use a Move Action to add more damage, </span></p>
+				<p class="c0"><span>Tier 1 the damage added is *S. Tier 2, the damage *S times one half, Tier 3 the damage is double your *S</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _range _combat _f">
+				<p><b>Precise Shot</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>*F 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span>No creature can redirect against your Weapon Range attack.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _g _defense _buff _immunity">
+				<p><b>Purity of Body</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 4, Lvl 8</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*G 6, Lvl 15</span></p></td></tr></tbody></table>
+				<p class="c0"><span>Tier 1 Gain duffs against Disease and poison equal to *G Tier 2 immunity to disease, Tier 3, immunity to poison.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _w _defense _immunity">
+				<p><b>Purity of Mind</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 4, Lvl 8</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*W 6, Lvl 15</span></p></td></tr></tbody></table>
+				<p class="c0"><span>Tier 1 cannot be frightened, Tier 2 cannot be charmed, Tier 3 cannot be mind controlled </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _alchemy _craft">
+				<p><b>Pyro</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td></tr><tr class="c11"><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Chemist Tier 1</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Chemist Tier 2</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Chemist Tier 3</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c6">Chemist Tier 4</span></p></td></tr></tbody></table>
+				<p class="c0"><span>Craft an alchemist bomb that only you can activate and throw. You can craft and safely hold a number of bombs equal to your *Each cost 10 gold and takes 10 minutes to craft. Bomb Work like an alchemist fires only with +1 damage per tier. Unlike Alchemist fires, these bombs cannot discharge until you attempt to use them.</span></p>
+				<hr>
+			</div>
+<!-- m a g i c     a n d    f a n t a s y-->
 			<h1> Book 2: Magic and Fantasy</h1>
 			<div class="filtered_object">
 				<p><b>example</b></p>
