@@ -4,7 +4,7 @@ body{
 	background-color:#003380;
 }
 aside{
-	min-width: 150px;
+	width: 150px;
 	padding:10px;
 	border:solid grey;
 	background-color:#b3d1ff;s
@@ -34,4 +34,7 @@ justify-content:space-around;
 	border: solid lightgrey 1px;
 	margin-right:5px;
 	padding:0px 10px;
+}
+.more_room{
+	padding:0px 50px;
 }

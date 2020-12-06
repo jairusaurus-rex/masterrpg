@@ -1,7 +1,10 @@
 <!DOCTYPE html>
+<html>
 <head>
 <link rel="stylesheet" href="themes/styles.css">
 <link rel="stylesheet" href="themes/old.css">
+<!--<link rel="stylesheet" href="themes/oldfm.css"> -->
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="javascript/flipper.js"></script>
@@ -10,11 +13,17 @@
 </head>
 <body>
 	<aside>
-		<p> Menu </p>
+		<b> Menu </b>
+		<p><strong> Core Features</strong></p>
 		<a href="https://jairusaurus-rex.github.io/masterrpg/index.html"><p>Main</p></a>
+		<a href="gameplay.html"><p>Gameplay</p></a>
 		<a href="abilities-stats.html"><p>Abilities and Stats</p></a>
 		<a href="skills.html"><p>Skills</p></a>
 		<a href="feats.html"><p>Feats</p></a>
+		<a href="gear.html"><p>Gear</p></a>
+		<a href="weakness.html"><p>Weaknesses</p></a>
+		<a href="creatures.html"><p>Creatures</p></a>
+		<p><strong> Book 2: Magic and Fantasy Exclusives</strong></p>
 	</aside>
 	<main>
 		<h1>Feats</h1>
@@ -35,6 +44,7 @@
 				<option value="_craft">Crafting</option>
 				<option value="_defense">Defense</option>
 				<option value="_grapple">Grappling</option>
+				<option value="_healing">Healing</option>
 				<option value="_hunter">Hunters</option>
 				<option value="_magic">Magic</option>
 				<option value="_martial">Martial Arts</option>
@@ -50,13 +60,14 @@
   			  	<option value="all">---</option>
 				<option value="_buff">Buff Points</option>
 				<option value="_action_cost">Change Action Cost</option>
-				<option value="_primary">Change Primary Ability score</option>
+				<option value="_primary">Change Primary Ability</option>
 				<option value="_stats">Change Stats</option>
 				<option value="_damage">Extra Damage</option>
 				<option value="_immunity">Gain Immunity</option>
 				<option value="_secondary">Give Secondary Ability</option>
 				<option value="_extra_attack">More Attacks</option>
 				<option value="_usages">More Usages of Abilities</option>
+				<option value="_mythical">Mythical Race Points</option>
 				<option value="_null">Remove Null</option>
 			</select>
 			 Ability <select name="filter2" id="filter3" onchange="filterThree()">
@@ -774,15 +785,179 @@
 			</div>
 <!-- m a g i c     a n d    f a n t a s y-->
 			<h1> Book 2: Magic and Fantasy</h1>
+			<div class="filtered_object _alchemy _craft">
+				<p><b>Alchemist</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I 1, any magic Tier 1, Craft potion proficiency</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I 2, &nbsp;any magic Tier 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I 3, any magic Tier 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I 4, any magic Tier 3, &nbsp;Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I 5, &nbsp;any magic Tier 4, Level 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You can create Potions of any spell you know or have in a spellbook. It takes one hour per spell level and at cost 10 times the tier percent less than the cost of a potion at that spell level. In the end, you must make a craft potion check vs 10 plus the spell level. On failure, you wasted money and time. The spell level can be equal to the tier or less. </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _companion">
+				<p><b>Animal Psychic Connection</b></p>
+				<table class="c27"><tbody><tr class="c10"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>Magic Nature Tier, Familiar or Animal Companion</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You have a psychic connection with your familiar and/or animal companion. You can have conversations up to the animal’s intelligence. You can order your animal companion to do the trick as a free action</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _magic _combat _defense _a">
+				<p><b>Armored Mage</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td></tr><tr class="c11"><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*A 1, proficiency in armor</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*A 2, Lvl 7</span></p></td><td class="c12" colspan="1" rowspan="1"><p class="c0"><span class="c6">*A 3, Level 13</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">For each tier pick a skill, Magic attack, magic burst, magic support. Each chosen skill is not nulled for wearing armor.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _bard _healing _defense">
+				<p><b>Bardic Restoration</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bardic Performance tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bardic Performance tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bardic Performance tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bardic Performance tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bardic Performance tier 5</span></p></td></tr></tbody></table>
+				<hr>
+			</div>
+			<div class="filtered_object _martial _combat _melee _range _damage _a">
+				<p><b>Elemental Fists</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 1, Martial Arts tier 1</span></p><p class="c0 c7"><span class="c2"></span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 2, Martial Arts tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 3, Martial Arts tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 4, Martial Arts tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 5, Martial Arts tier 5</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">For each tier Pick one type of elemental energy (see Magic rules: types of damage). When you do a strike attack, you can choose from the list you made to do the following.</span></p>
+				<p class="c0"><span class="c2">Spend a ki point to add 2 damage for each tier to your strike attack. The damage type for this additional damage is from one of your energy choses.</span></p>
+				<p class="c0"><span class="c2">You can spend another ki point (for a total of 2 for the strikes attack) to give your strike attack a range with an additional range of 5 feet for each tier</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _i _a _craft">
+				<p><b>Enchanting Master</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 1, any magic Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 2, any magic Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 3, any magic Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 4, any magic Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 5, any magic Tier 5</span></p></td></tr></tbody></table>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 10</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 6, any magic Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 7, any magic Tier 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 8, any magic Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 9, any magic Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 10, any magic Tier 10</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You can create enchantment with a Magic Power equal to the tier. Enchanting anything costs 5 * Tier percent less than the cost of buying that time. It takes one day per every thousand to spend on the item. Every day you have to make an Enchanting check equal to 10 plus the Magic Power. Each failed attempt is a wasted day. </span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _healing _defense">
+				<p><b>Intense Healer</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic holy Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic holy Tier 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">magic holy Tier 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic holy Tier 4, &nbsp;Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic holy Tier 5, Level 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">Anytime anyone is healed from you, you can add the Tier to that healing.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _combat _magic _f">
+				<p><b>Keen concentration</b></p>
+				<table class="c27"><tbody><tr class="c10"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>*F3</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">Can concentrate on two spells</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _magic _a _stats">
+				<p><b>Magic Arcane</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 2, Lvl 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 3, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 4, Lvl 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 5, Lvl 9</span></p></td></tr></tbody></table>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 10</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 6, Lvl 11</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 7, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 8, Lvl 15</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 9, Lvl 17</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 10, Lvl 19</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You are permitted to add Arcane magic spells to your spells known that have a spell level equal or less than the tier. </span></p>
+				<p class="c0"><span class="c2">Your Spells Known and Mana increase by the tier</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _magic _a _stats">
+				<p><b>Magic Black</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 2, Lvl 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 3, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 4, Lvl 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 5, Lvl 9</span></p></td></tr></tbody></table>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 10</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 6, Lvl 11</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 7, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 8, Lvl 15</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 9, Lvl 17</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 10, Lvl 19</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You are permitted to add Black magic spells to your spells known that have a spell level equal or less than the tier. </span></p>
+				<p class="c0"><span class="c2">Your Spells Known and Mana increase by the tier</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _magic _a _stats">
+				<p><b>Magic Elemental</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 2, Lvl 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 3, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 4, Lvl 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 5, Lvl 9</span></p></td></tr></tbody></table>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 10</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 6, Lvl 11</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 7, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 8, Lvl 15</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 9, Lvl 17</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 10, Lvl 19</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You are permitted to add Elemental magic spells to your spells known that have a spell level equal or less than the tier. </span></p>
+				<p class="c0"><span class="c2">Your Spells Known and Mana increase by the tier</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _magic _a _stats _healing">
+				<p><b>Magic Holy</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 2, Lvl 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 3, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 4, Lvl 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 5, Lvl 9</span></p></td></tr></tbody></table>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 10</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 6, Lvl 11</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 7, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 8, Lvl 15</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 9, Lvl 17</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 10, Lvl 19</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You are permitted to add Holy magic spells to your spells known that have a spell level equal or less than the tier. </span></p>
+				<p class="c0"><span class="c2">Your Spells Known and Mana increase by the tier</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _magic _a _stats">
+				<p><b>Magic Nature</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 2, Lvl 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 3, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 4, Lvl 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 5, Lvl 9</span></p></td></tr></tbody></table>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 10</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 6, Lvl 11</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 7, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 8, Lvl 15</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 9, Lvl 17</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 10, Lvl 19</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You are permitted to add Nature magic spells to your spells known that have a spell level equal or less than the tier. </span></p>
+				<p class="c0"><span class="c2">Your Spells Known and Mana increase by the tier</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _magic _healing _mythical _stats _secondary _buff _movement _healing _weakness _damage">
+				<p><b>Magical Source</b></p>
+				<table class="c27"><tbody><tr class="c10"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span>One Tier in Magic plus other restrictions based on choices. See Chapter on Magic</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">See Chapter on Magic Source</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _defense _a">
+				<p><b>Magical Toughness</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 4, &nbsp;Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 5, Level 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">Gain resistance to all magic attacks equal to the Tier</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _bard _hunter _martial _rage _usages _a">
+				<p><b>Mana Tap</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 4, &nbsp;Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 5, Level 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">Choose one for each tier, Bardic performance, hunters mark, ki, rage, or sentry taunt. You can use your mana for an extra use of anything you selected. The mana cost is 6 minus the tier.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _s _d _g _stats">
+				<p><b>Mighty</b></p>
+				<table class="c27"><tbody><tr class="c10"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span class="c2">*S + *D + *G = 3</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">Choose *S, *D, or *G. Add that ability to your worthy</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _i _craft _mythical">
+				<p><b>Mutagen Brewer</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I 4, Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I 5, Level 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You can spend one hour creating one Mutagen. Each Mutigan can add Mythical Feats equal to your *G + Tier. You decide which Mythical Feats when you make the Mutagen. When you drink the Mutagen you gain those Mythical Feats for an hour. When you drink a second Mutagen while a first Mutagen is in effect, the first Mutagen goes away while the second starts for an hour. You can hold a number of mutagens up to your *I. If you wish to make another and you are at your maximum, you must discard one Mutagen.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _magic _healing _mythical _stats _secondary _buff _movement _healing _weakness _damage">
+				<p><b>Multiple Sources</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">any magic Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">any magic Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">any magic Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">any magic Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">any magic Tier 10</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You can choose another magical source you have not picked yet for every tier. You choose one source and only one source to be your supportability for all magic boosts.</span></p>
+				<p class="c0"><span class="c2">If you have Pact as one of your magical sources, you must still follow the rules of your pact or lose the ability you picked to be your supportability for all magic boosts and all pact features.</span></p>
+				<p class="c0"><span class="c2">If you have Spellbook, you still lose your “spells known” and “Spellbook” and “spells prepared” still run on *I</span></p>
+				<p class="c0"><span class="c2">If you have Prodigy, you must still pick a weakness</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _a _mythical">
+				<p><b>Mythical Race</b></p>
+				<table class="c27"><tbody><tr class="c10"><td class="c35" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 1</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You gain a list equal to your *A plus bonus Mythical Feat Points</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _immunity _defense">
+				<p><b>Purity of Soul</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td></tr><tr class="c11"><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Purity of Body tier 1, Purity of Mind tier 1, Magical Toughness tier 1<</span></p></td><td class="c50" colspan="1" rowspan="1"><p class="c0"><span class="c6">Purity of Body tier 2, Purity of Mind tier 2, Magical Toughness tier 2</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">Tier 1 Cannot be cursed, Tier 2, cannot age or die from old age</span></p>
+				<hr>
+			</div>
 			<div class="filtered_object">
-				<p><b>example</b></p>
-				
+				<p><b>Sage Scholar</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 1, any magic Tier 1, Proficiency in Crafting Magic Scroll, </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 2, any magic Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 3, any magic Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 4, any magic Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 5, any magic Tier 5</span></p></td></tr></tbody></table>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 10</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 6, any magic Tier 6</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 7, any magic Tier 7</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 8, any magic Tier 8</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 9, any magic Tier 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*I + *A = 10, any magic Tier 10</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">You can create a Magic Scroll of any spell you know or have in a spellbook. It takes one hour per spell level and at cost 5 times the tier percent less than the cost of a magic scroll at that spell level. In the end, you must make a craft magic scroll check vs 10 plus the spell level. On failure, you wasted money and time. The spell level can be equal to the tier or less.</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _weakness _mythical">
+				<p><b>Weakness for Mythical traits</b></p>
+				<table class="c27"><tbody><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 4</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Tier 5</span></p></td></tr><tr class="c11"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">None</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c6">Lvl 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span>For every tier, gain a weakness and gain two Mythical Feat points
+
+</span></p>
+				<hr>
+			</div>
+			<div class="filtered_object _a _damage _combat">
+				<p><b>Weapon Empower</b></p>
+				<table class="c27"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ter 2</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 3</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 4 </span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Tier 5</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 2, Lvl 5</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 3, Lvl 9</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 4, &nbsp;Lvl 13</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A 5, Level 17</span></p></td></tr></tbody></table>
+				<p class="c0"><span class="c2">For each tier, choose an energy damage type and a weapon you are proficient in. For an attack, you can empower a weapon you choose with an energy damage you chose. You can add extra damage of that energy type. You can add up to twice the tier. This cost mana equal to the added damage minus the tier (min 1)</span></p>
 				<hr>
 			</div>
 		</div>
+		
 		<!-- ##################################################################################################################################### -->
 		<div id=rules class="flippage" style="display:none">
-			
+			<p class="c4"><span class="c6">Every character has a number of feat tiers (or levels) equal to their bonus plus their level. When leveling up, fill this number in one of two ways.</span></p>
+			<p class="c4"><span class="c6">Every time you level up you must choose new feats equal to that number. To get a feat, you must first meet all the prerequisites it requires. This new feat counts as a tier one and just adds one to your total of feat tiers for the above calculation. </span></p>
+			<p class="c4"><span class="c6">Instead of choosing a new feat, you can instead improve a feat you already have. You can do this if a feat has tiers. When you get a feat with tiers for the first time, you get that feat at tier 1. You can improve your tier anytime you get a new feat by instead choosing to go one more tier up on a feat you already have. You must meet the prerequisites for that tier to do so, just like selecting a feat.</span></p>
+			<h1><span>Requirements</span></h1>
+			<p class="c4"><span class="c6">If a feat forbids anything, you must not have that thing to get that feat and cannot get that </span></p>
+			<p class="c4"><span class="c6">Requirements for a tier are separated by a comma.</span></p>
+			<h1></h1>
 			
 		</div>
 		

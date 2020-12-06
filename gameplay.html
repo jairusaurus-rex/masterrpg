@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="themes/styles.css">
+<link rel="stylesheet" href="themes/old.css">
+<!--<link rel="stylesheet" href="themes/oldfm.css"> -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript/flipper.js"></script>
+
+
+</head>
+<body>
+	<aside>
+		<b> Menu </b>
+		<p><strong> Core Features</strong></p>
+		<a href="https://jairusaurus-rex.github.io/masterrpg/index.html"><p>Main</p></a>
+		<a href="gameplay.html"><p>Gameplay</p></a>
+		<a href="abilities-stats.html"><p>Abilities and Stats</p></a>
+		<a href="skills.html"><p>Skills</p></a>
+		<a href="feats.html"><p>Feats</p></a>
+		<a href="gear.html"><p>Gear</p></a>
+		<a href="weakness.html"><p>Weaknesses</p></a>
+		<a href="creatures.html"><p>Creatures</p></a>
+		<p><strong> Book 2: Magic and Fantasy Exclusives</strong></p>
+	</aside>
+	<main>
+		<h1>Gameplau</h1>
+		<br>
+		<div class="space_around thinborder">
+			<button onclick="flip('list')">Quick Referense List</button>
+			<button onclick="flip('combat')">Combat</button>
+			<button onclick="flip('adventuring');">Adventuring</button>
+		</div>
+		
+		<!-- ##################################################################################################################################### -->
+		<div id=list class="flippage" >
+			<h1>Quick Referense List</h1>
+			<b>Action Economy</b>
+			
+			<div class=space_around>
+				<div class="thinborder"><h2>Major Action</h2>
+					<b> Book 1</b>
+					<div title="Use a weapon or natural ability to use an attack. You can do this once per turn and only with a Major Action. This is called a Standard Attack for all feats that use Standard Attacks. All other attacks are called Extra Attacks. When doing this with a weapon, if the weapon is a single handed weapon, you must have it in your main hand."><p>Standard attack</p></div>
+					<div title="You can Disengage on your turn. If you do, others cannot make an attack of opportunity on that turn."><p>Disengage</p></div>
+					<div title="If another ally is at negative hit points and is within reach, you can perform a Heal Other on him. You must make a Medicine check against the number of negative hit points. If successful, that ally's hit points return to 0. If unsuccessful, that ally takes one damage."><p>Heal Other</p></div>
+					<div title="If an enemy is within reach you can attempt to make a grapple check against the enemies grapple check. If successful you can do one of the following. Put the enemy in the Grappled condition. Escape the grappled condition. If the enemy is already in the grappled condition, put them in the pinned condition.  If you are in the pinned condition, escape to the grappled position. You can only grapple something your size or smaller, though you can attempt escape anyone that grappled or pinned you."><p>Grapple</p></div>
+					<div title="If your weapon has a broken condition, you can Fix Weapon to take the broken condition away from the weapon."><p>Fix Weapon</p></div>
+					<div title="You can drink any remedy or potion or you can force an unconscious person to drink a potion."><p>Drink</p></div>
+					<b> Book 2</b>
+					<div title="Use a spell that is activated by a Standard Spell. You can do this once per turn and only with a Major Action. This is called a Standard Spell for all feats that use Standard Spell. All other attacks are called Extra Spell."><p>Standard Spell</p></div>
+					<div title="Use a magical item such as a wand or staff or any item or weapon that needs to be activated."><p>Use Magical Item</p></div>
+				</div>
+				<div class="thinborder"><h2>Move Action</h2>
+					<div title="You can move to your full speed. If you have more than one move speed, such as fly, you can start to move in the other way by subtracting what you have already moved."><p>Move</p></div>
+					<div title="If you are knocked to the ground, you can use your move action to your feet."><p>Rise up</p></div>
+					<div title="If you are in Melee combat, you can move 5 feet in any direction as long as you stay adjacent to one of the enemies you were in melee combat with. No one can us Attack of Opportunity for this move action."><p>Reposition</p></div>
+					<div title="You can jump at *S + *D feet forward in a straight line. You can jump *S feet up."><p>Leap</p></div>
+				</div>
+				<div class="thinborder"><h2>Move Action</h2>
+					<div title="You can move up to your speed in a perfect line. You can only move in one way (ground, swimming, etc.) You cannot do this action while wearing armor"><p>Dash</p></div>
+					<div title="Draw or Sheath weapon"><p>Draw or Sheath weapon</p></div>
+					<div title="Pick up any object off the floor"><p>Pickup object</p></div>
+					<div title="Use or open or act with any minor object."><p>interact with object</p></div>
+					<div title="You take the time to fall to the ground and make yourself prone. You can also make a deception skill check against anyone’s insight. If you win, you can fool someone to think you have fallen in combat."><p>Fall</p></div>
+					<div title="After making a standard attack with your main hand, you can make an extra attack with your off hand if it is a light weapon. The skill with your off hand is nulled. That weapon does one less damage than it normally would"><p>Off hand attack</p></div>
+					<div title="Order your companion animal to do a trick or follow an order"><p>Order trick</p></div>
+					<div title="you can give an item a willing character within 5 feet of you or throw something 1 large weight or smaller to a willing character within 5 times your *S."><p>Order trick</p></div>
+				</div>
+				<div class="thinborder"><h2>Reaction</h2>
+					<div title="You can make an extra attack if someone moves LEAVE any five feet space that is adjacent to you. You can also make the attack of opportunity if you are adjacent to anyone who does one of the following: Grapple, drink, heal other, hide, fix weapon, Rise up, sheath weapon or pickup object."><p>Attack of opportunity</p></div>
+					<div title="If a weapon attacks you and you fail to defend against it., you can choose to raise your shield before making a defense check. You use your Shield Skill Check against the same weapon skill check roll. If successful, you don’t have to make the defense check."><p>Raise shield</p></div>
+					<div title="When someone makes a ranged weapon attack on you while you are adjacent to an enemy, you can choose to try to redirect the shot before making a defense check. You use your Grapple Skill Check or Reflex Skill Check against the weapon skill check. If successful, you don’t have to make the defense check but one enemy you are adjacent to does. If you fail, you must make a defense check against that SAME weapon skill check roll."><p>Redirect shot</p></div>
+					<div title="If an ally adjacent to you is attempting a Skill check in a skill you are proficient in, you can make an Aid Other act. The ally gains a buff."><p>Aid Other</p></div>
+				</div>
+				<div class="thinborder"><h2>Free Action</h2>
+					<div title="Some actions do not take any use of an action. You can drop anything in your hands at any time on your turn. You can also talk for six seconds on your turn. You can also freely take any item given to you if you have enough free hands to do so."><p>Short Acts</p></div>
+				</div>
+			</div>
+			<b>Death</b>
+			<ul>
+				<li>If any character has negative hit points that are greater (in absolute value) to their max hit points, they are dead.</li>
+				<li>If any character has more death points than their stamina points, they are dead.</li>
+				<li>If any character’s stamina is lower than 0, they are dead</li>
+			</ul>
+		</div>
+		
+		<!-- ##################################################################################################################################### -->
+		<div id=combat class="flippage"  style="display:none">
+			<h1>Combat</h1>
+		</div>
+		<!-- ##################################################################################################################################### -->
+		<div id=adventuring class="flippage"  style="display:none">
+			<h1>Adventuring</h1>
+		</div>
+	</main>
+</body>
+<html>
