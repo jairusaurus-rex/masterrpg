@@ -38,3 +38,8 @@ justify-content:space-around;
 .more_room{
 	padding:0px 50px;
 }
+button{
+	padding:10px;
+	color:white;
+	background-color:#003380;
+}
