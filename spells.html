@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="themes/styles.css">
+<link rel="stylesheet" href="themes/oldfm.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript/flipper.js"></script>
+<script src="javascript/filter.js"></script>
+
+</head>
+<body>
+	<aside>
+		<b> Menu </b>
+		<p><strong> Core Features</strong></p>
+		<a href="https://jairusaurus-rex.github.io/masterrpg/index.html"><p>Main</p></a>
+		<a href="gameplay.html"><p>Gameplay</p></a>
+		<a href="abilities-stats.html"><p>Abilities and Stats</p></a>
+		<a href="skills.html"><p>Skills</p></a>
+		<a href="feats.html"><p>Feats</p></a>
+		<a href="gear.html"><p>Gear</p></a>
+		<a href="weakness.html"><p>Weaknesses</p></a>
+		<a href="creatures.html"><p>Creatures</p></a>
+		<p><strong> Book 2: Magic and Fantasy Exclusives</strong></p>
+		<a href="spells.html"><p>Magic and Spells</p></a>
+		<a href="magicalsource.html"><p>Magical Source</p></a>
+		<a href="mythicalrace.html"><p>Mythical Race</p></a>
+	</aside>
+	<main>
+		<h1>Spells</h1>
+		<br>
+		<div class="space_around thinborder">
+			<button onclick="flip('list')">Spell List</button>
+			<button onclick="flip('cantrips')">Cantrips</button>
+			<button onclick="flip('rules')">Spell Rules</button>
+			<button onclick="flip('creation')">Spell Creation</button>
+		</div>
+		
+		<!-- ##################################################################################################################################### -->
+		<div id=list class="flippage" >
+			<br>
+			Filter <select name="filter" id="filter" onchange="filter()">
+  			  	<option value="all">All</option>
+				<option value="_arcane">Arcane</option>
+				<option value="_black">Black</option>
+				<option value="_elemental">Elemental</option>
+				<option value="_holy">Holy</option>
+				<option value="_nature">Nature</option>
+			</select>
+			<h1>Spell List</h1>
+			<div class="filtered_object _arcane">
+				<b>Alarm</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type </span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Arcane</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Self Burst</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c0"><span class="c2">One day (concentration)</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Detect Magic, Message</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">If anyone enters the area affected without your password, you are immediately notified, even if you are asleep</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_1pi46wpv27wc-0 start"><li class="c5 c19"><span class="c2">+ Add one day to the duration</span></li><li class="c5 c19"><span class="c2">Change Range Type to range burst</span></li><li class="c5 c19"><span class="c2">You are immediately notified if the spell is disabled.</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _black">
+				<b>Bleed</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Black</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ray</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bleed out</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target takes one damage. All Range types are automatic successes instead of skill checks</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_1pi46wpv27wc-0"><li class="c5 c19"><span class="c2">+ Add one damage</span></li><li class="c5 c19"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_1pi46wpv27wc-1 start"><li class="c5 c15"><span class="c2">Only those you want are damaged</span></li><li class="c5 c15"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_1pi46wpv27wc-2 start"><li class="c4"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _holy">
+				<b>Bless</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Holy</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A + bonus rounds</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Light</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Next skill check used by target gains a buff equal to *A</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0 start"><li class="c5 c19"><span class="c2">+ Adds *A to the buff</span></li><li class="c5 c19"><span class="c2">+ Adds *A to the duration</span></li><li class="c5 c19"><span class="c2">+ Add one to the number of next skill checks that gain the buff</span></li><li class="c5 c19"><span class="c2">Changes range hype to ray</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Only those you want are blessed</span></li><li class="c4"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _nature">
+				<b>Brambles</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Nature</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cone</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A + bonus turns</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">You summon a group of thorns that try to entangle all within the zone. If you win, a target is tangled for the duration. If they are tangled, they can use a Major Action to try to escape. They must roll an Escape Artist vs your Magic Burst.</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_bbnlg0bzsu4u-0 start"><li class="c5 c19"><span class="c2">+ Adds *A to duration</span></li><li class="c5 c19"><span class="c2">Area affected becomes difficult terrain</span></li></ul>
+				<ul class="c12 lst-kix_bbnlg0bzsu4u-1 start"><li class="c5 c15"><span class="c2">Any time someone moves in the difficult terrain created by the spell, they must back a reflex vs your magic burst or become tangled. </span></li></ul>
+				<ul class="c12 lst-kix_bbnlg0bzsu4u-0"><li class="c5 c19"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_bbnlg0bzsu4u-1 start"><li class="c5 c15"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _arcane">
+				<b>Bright Spray</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Arcane</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cone</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Light, dancing lights, Dazed</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Anyone caught up in the spray where you win the check is stunned and has the condition of disoriented </span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range type to range burst</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _nature">
+				<b>Change Size</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrips</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Nature</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A + bonus Rounds</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target changes size to large. They gain one buff in all skills withere *S is the primary ability but one debuff where *D is the primary ability. All their weapons do one more damage and they gain 5 temporary hit points. </span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds *A turns to the duration</span></li><li class="c5 c19"><span class="c2">Target can change to small instead. they gain one buff in all skills withere *D is the primary ability but one debuff where *S is the primary ability. All their weapons do one less damage</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Targe can change to Huge instead They gain three buff in all skills withere *S is the primary ability but four debuff where *D is the primary ability. All their weapons do two more damage and they gain 15 temporary hit points</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Target can change to Tiny instead. they gain three buff in all skills withere *D is the primary ability but three debuff where *S is the primary ability. All their weapons do two less damage. </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">Target can change to Gargantuan instead They gain Six buff in all skills withere *S is the primary ability but six debuff where *D is the primary ability. All their weapons do Four more damage and they gain 30 temporary hit points</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-4 start"><li class="c5 c40"><span class="c2">Target can change to Diminutive instead. they gain six buff in all skills withere *D is the primary ability but six debuff where *S is the primary ability. All their weapons do four less damage</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-5 start"><li class="c5 c32"><span class="c2">Target can change to Colossal instead They gain ten buff in all skills withere *S is the primary ability but ten debuff where *D is the primary ability. All their weapons do Four more damage and they gain 50 temporary hit points</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Changes range hype to ray</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Only those you want are changed</span></li><li class="c4"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _arcane">
+				<b>Charming</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrips</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Arcane</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A + bonus minutes</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Detect Magic</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">The next person target talk to, target can buffs to all charm, converse, convince, deception, or leadership checks on that person equal to *A</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds *A to the buff</span></li><li class="c5 c19"><span class="c2">+ Adds *A to the duration of turns</span></li><li class="c5 c19"><span class="c2">+ Change Range type to Ray.</span></li><li class="c5 c19"><span class="c2">+ target gains an additional person to charm. The next person in addition to the last person charmed also is under this effect</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _black">
+				<b>Curse</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrips</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Black</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1 round</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bleed out</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Next skill check used by target gains a debuff equal to *A</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds *A to the debuff</span></li><li class="c5 c19"><span class="c2">+ Adds 1 to the duration</span></li><li class="c5 c19"><span class="c2">+ Add one to the number of next skill checks that gain the buff</span></li><li class="c5 c19"><span class="c2">Changes range hype to ray</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Only those you want are cursed</span></li><li class="c4"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _black">
+				<b>Death</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Black</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bleed out</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">If target is below 0 hit points, they gain one death point</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds one death point</span></li><li class="c5 c19"><span class="c2">Target can gain death points if they are at half or fewer hit points</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Any target can gain death points</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Changes range hype to ray</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Only those you want to gain death points</span></li><li class="c4"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _arcane">
+				<b>Disguise Self</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Arcane</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A + bonus hours(concentration)</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Detect Magic</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target gains buff to disguise checks. You can make yourself appear smaller, larger, different sex, or different race</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds *A hours to the duration</span></li><li class="c5 c19"><span class="c2">Change Range Type to Ray</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _holy">
+				<b>Disrupt Undead</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Holy</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Light</span></p></td></tr></tbody></table>
+				<p>Upgrades:</p>
+				<p class="c5"><span>Description</span><span class="c23">: </span><span>If target is undead, it is dealt *A times bonus radiant damage</span></p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds *A to the damage</span></li><li class="c5 c19"><span class="c2">Change range type to ray</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range type to Cone </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Only undead you want are damaged</span></li><li class="c4"><span class="c2">Change range time to self burst </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">Change range type to range burst</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _black">
+				<b>Fear</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Black</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ray</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">persistent</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bleed out</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target is frightened. This condition is persistent </span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds *A turns to the duration</span></li><li class="c5 c19"><span class="c2">Change range type to Cone</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Only those you want to are frightened </span></li><li class="c5 c15"><span class="c2">Change range time to self burst </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span>Change range type to range burst</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _elemental">
+				<b>Feather Fall</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Elemental</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Reaction</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Mage hand</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Slow your fall to prevent all damage of a fall</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_buj2gds7598s-0 start"><li class="c5 c19"><span class="c2">Change Range type to ray</span></li></ul>
+				<ul class="c12 lst-kix_buj2gds7598s-2 start"><li class="c4"><span class="c2">Only those you want are affected by Feath Fall. </span></li><li class="c4"><span class="c2">Change range type to range burst</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _elemental">
+				<b>Fire</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Elemental</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ray</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Dancing Lights, Fire Starter</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target takes *A plus Bonus fire damage</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds *A to the damage</span></li><li class="c5 c19"><span class="c2">Change range type to Cone </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range time to self burst </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Change range type to range burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">Change range type to range wall </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Area affected by fire are changed to charred ground for *A turns. If anyone moves on it in their turn, you make a Magic burst vs reflex negates to do *A fire damage</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">+ Add *A to charred damage</span></li><li class="c5 c15"><span class="c2">+ Add *A to turns it effects</span></li><li class="c5 c15"><span class="c2">For each 5 ft square a person moves in charred ground, you make a magic burst vs reflex negates to do *A fire damage</span></li><li class="c5 c15"><span class="c2">Only those you want are affected by the charred ground</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Anyone successfully hit with this fire set on fire. At the end of their turns, they take *A damage, this is a persistent condition </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">+ Add *A to fire damage</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Anyone successfully hit with this fire can have a weapon made from metal targeted. That person has to make an athletic check vs your magic burst. If you win, they can either take another *A damage or drop that weapon. This also gives your the Cantrip ‘heat metal’</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">+ Add another weapon that person is holding</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _elemental">
+				<b>Fog</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Elemental</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cone</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c2">A + Bonus Turns (concentration)</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Create a fog in which people can only see 5 ft through it. </span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Add *A to the duration</span></li><li class="c5 c19"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range type to range burst </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">People cannot see through any of the fog</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _nature">
+				<b>Grease</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Nature</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cone</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A + bonus</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Fire Starter</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Area affected becomes slippery. Anyone walking more than five feet must make a reflex check vs your magic burst. If you win, they fall and become prone. &nbsp;</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ add *A to the duration</span></li><li class="c5 c19"><span class="c2">People you wish to not slip can walk freely</span></li><li class="c5 c19"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range type to range burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Grease is flammable, if touching any fire, it will burst a flame dealing *A fire damage. The grease disappears. </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">+ adds *A to the damage</span></li><li class="c5 c15"><span class="c2">Fire stays for *A turns and anyone who starts their turn inside must make a reflex check vs your magic burst. If you win, they that damage again, if they win, they take half damage</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">+ adds *A turns to the duration</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _holy">
+				<b>Heal</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Holy</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Stabilize</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target is healed *A + bonus hit points</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds *A to all healed hit points</span></li><li class="c5 c19"><span class="c2">Changes range hype to ray</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Only those you want are healed</span></li><li class="c4"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">Change range type to range burst </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">All undead are hurt by this effect</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _elemental">
+				<b>Ice</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Elemental</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ray</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">sutter</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target takes *A plus Bonus Cold damage</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds *A to the damage</span></li><li class="c5 c19"><span class="c2">Change range type to Cone </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range time to self burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Change range type to range burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">Change range type to wall </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Area affected by ice becomes frozen solid for *A turns. Anyone inside is stuck. On their turns, you make a Magic Burst vs Athletics. If they win, they break out. This works for wall range types as well instead of pushing them out</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">+ Add *A to turns it effects</span></li><li class="c5 c15"><span class="c2">Only those you want are affected are frozen solid</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Anyone successfully hit with or just broke free from the ice Are too cold to move properly and are Overburdened. This is a persistent conditions</span></li><li class="c5 c19"><span class="c2">Anyone successfully hit with this Ice can have a weapon targeted. They must make a reflex vs your magic burst. If you win, that weapon has the broken condition. This also gives your the Cantrip ‘Sutter’</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">+ Add another weapon that person is holding</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _arcane">
+				<b>Illusion</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c57" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c60" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Arcane</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c14" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c57" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ray</span></p></td><td class="c60" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A + Bonus minutes (concentration)</span></p></td><td class="c51" colspan="1" rowspan="1"><p class="c0"><span class="c2">Message,</span></p><p class="c0"><span>Prestidigitation, Detect Magic</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Create a Medium size or smaller illusion. The image cannot move or make sounds If someone sees the the image being summoned, you make a magic burst vs sanity. They have a buff based on the size (1 for tiny, 2, small, 3 medium, 4 for large ext.) If you win, they believe the image is real. Any time the illusion does not make logical sense, anyone can make that check again. If anyone touches the illusion, they will know it is not real</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_rdq90rusp5u3-0 start"><li class="c5 c19"><span class="c2">Illusion lasts *A hours of duration</span></li></ul>
+				<ul class="c12 lst-kix_rdq90rusp5u3-1 start"><li class="c5 c15"><span class="c2">Illusion lasts one day (24 hours)</span></li></ul>
+				<ul class="c12 lst-kix_rdq90rusp5u3-1 start"><li class="c5 c15"><span class="c2">Illusion lasts one day (24 hours)</span></li></ul>
+				<ul class="c12 lst-kix_rdq90rusp5u3-3 start"><li class="c5 c56"><span class="c2">Illusion can last a month</span></li></ul>
+				<ul class="c12 lst-kix_rdq90rusp5u3-4 start"><li class="c5 c40"><span class="c2">Illusion can last a year</span></li></ul>
+				<ul class="c12 lst-kix_rdq90rusp5u3-0"><li class="c5 c19"><span class="c2">+ make an illusion for one size larger</span></li><li class="c5 c19"><span class="c2">The illusion can have moving parts</span></li><li class="c5 c19"><span class="c2">As a minor action, you can move the illusion +A time 5 ft</span></li></ul>
+				<ul class="c12 lst-kix_rdq90rusp5u3-1 start"><li class="c5 c15"><span class="c2">This becomes a free action</span></li><li class="c5 c15"><span class="c2">+ addes *A times 5 ft to the movement</span></li></ul>
+				<ul class="c12 lst-kix_rdq90rusp5u3-0"><li class="c5 c19"><span class="c2">Illusion can make noise or say pre-recorded phrases</span></li></ul>
+				<ul class="c12 lst-kix_rdq90rusp5u3-1 start"><li class="c5 c15"><span class="c2">Illusion can be given a personality to answer when spoken to.</span></li></ul>
+				<ul class="c12 lst-kix_rdq90rusp5u3-0"><li class="c5 c19"><span class="c2">Illusion can be touched though not handled. For example, an illusion can feel like a tree or make a hand shake but cannot be climbed or picked up</span></li><li class="c5 c19"><span class="c2">+ you can create another illusion within the same parameters as the other</span></li><li class="c5 c19"><span class="c2">You can see and hear what your illusion sees and hears</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _arcane">
+				<b>Levitation</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Arcane</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ray</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A + Bonus turns (concentration)</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Mage Hand, Meditation, </span></p><p class="c0"><span class="c2">Open/ close</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target person or item can be moved through the air. The amount you can carry is one large weight. You can move it *A plus bonus feet rounded up to the nearest number divisible by 5 each turn. You can levitate a being as long as you can levitate all Large weights that person is carried and have one more Large weight to carry a medium creature. You need one more Large weight to carry for each size larger than medium and one Large weight less to carry for each size less than medium. If you move a creature and they are unwilling, you must make a Magic Burst vs Willpower to succeed. Each of the targets turn, they can retake that roll to escape.</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_6vfej7ddpzue-0 start"><li class="c5 c19"><span class="c2">+ Add a Large Weight to the amount you can carry</span></li><li class="c5 c19"><span class="c2">+ Add *A to the amount you can move levitated items per turn</span></li><li class="c5 c19"><span class="c2">+ Add *A turns to the duration</span></li><li class="c5 c19"><span class="c2">Change range type to Cone </span></li></ul>
+				<ul class="c12 lst-kix_6vfej7ddpzue-1 start"><li class="c5 c15"><span class="c2">Change range time to self burst</span></li></ul>
+				<ul class="c12 lst-kix_6vfej7ddpzue-2 start"><li class="c4"><span class="c2">Change range type to range burst</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _arcane">
+				<b>Mage Armor</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Arcane</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A + bonus minutes</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Detect Magic</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">For duration, target gains *A buff for armor checks. However, if the target is wearing armor, target loses all buffs that armor provided. Debuffs to *D skills still stand </span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_fqgc4u9av9xs-0 start"><li class="c5 c19"><span class="c2">+ adds *A to the number of minutes of duration</span></li><li class="c5 c19"><span class="c2">+ adds one to the buff of armor checks </span></li><li class="c5 c19"><span class="c2">Changes range hype to ray</span></li></ul>
+				<ul class="c12 lst-kix_fqgc4u9av9xs-1 start"><li class="c5 c15"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_fqgc4u9av9xs-2 start"><li class="c4"><span class="c2">Only those you want get Mage Armor</span></li><li class="c4"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_fqgc4u9av9xs-3 start"><li class="c5 c56"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _nature">
+				<b>Poison</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Nature</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cone</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Detect Poison, Purify Nurishment</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Deals A* poison damage, this is a persistent condition </span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_fqgc4u9av9xs-0"><li class="c5 c19"><span class="c2">Gas poison lingers in area affected for *A plus bonus turns and is not a concentration spell. All creatures that start in that space that were not already holding their breath take their fortitude check vs your Magic burst check. If you win, they take *A damage. Characters can hold their breath and walk into the cloud, but if they need to breath during that time, they take effect as normal.</span></li></ul>
+				<ul class="c12 lst-kix_fqgc4u9av9xs-1 start"><li class="c5 c15"><span class="c2">+ add *A to the damage with the lingering cloud</span></li><li class="c5 c15"><span class="c2">+ add *A turns to the duration. </span></li><li class="c5 c15"><span class="c2">In addition to the damage, people take one level of exhaustion </span></li></ul>
+				<ul class="c12 lst-kix_fqgc4u9av9xs-2 start"><li class="c4"><span class="c2">Instead of one level of exhaustion, people take one death point</span></li></ul>
+				<ul class="c12 lst-kix_fqgc4u9av9xs-0"><li class="c5 c19"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_fqgc4u9av9xs-1 start"><li class="c5 c15"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _holy">
+				<b>Restoration</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Holy</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Mend, Purify Nurishment</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Remove one level of exhaustion</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_cce6pfg3kewv-0 start"><li class="c5 c19"><span class="c2">+ remove one more exhaustion level</span></li><li class="c5 c19"><span class="c2">If there are no exhaustion levels, target removes one death point instead</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-1 start"><li class="c5 c15"><span class="c2">+ remove one more Death Point </span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-0"><li class="c5 c19"><span class="c2">Changes range hype to ray</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-1 start"><li class="c5 c15"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-2 start"><li class="c4"><span class="c2">Only those you want are restored</span></li><li class="c4"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-3 start"><li class="c5 c56"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _holy">
+				<b>Revise</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Holy</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Stabilize </span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Bring back someone from the dead. Target must be dead for less than one round. Target’s health is negative total health, target has death points and exhaustion levels equal to his stamina. Targe has the dying condition. Target cannot be older than his race’s life expectancy </span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_cce6pfg3kewv-0"><li class="c5 c19"><span class="c2">Target does not have the dying condition</span></li><li class="c5 c19"><span class="c2">+Target is revised with one less exhaustion level</span></li><li class="c5 c19"><span class="c2">+ target is revised with one less death point</span></li><li class="c5 c19"><span class="c2">+ target is revised with 10 more hit points (up to target’s max)</span></li><li class="c5 c19"><span class="c2">Target can be revised if dead less than a minute</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-1 start"><li class="c5 c15"><span class="c2">Target can be revised if dead less than 10 minutes</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-2 start"><li class="c4"><span class="c2">Target can be revised if dead less an hour</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-3 start"><li class="c5 c56"><span class="c2">Target can be revised if dead less than a day</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-4 start"><li class="c5 c40"><span class="c2">Target can be revised if dead less than a week</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-5 start"><li class="c5 c32"><span class="c2">Target can be revised if dead less than a month</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-6 start"><li class="c5 c59"><span class="c2">Target can be revised if dead less than a year</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-0"><li class="c5 c19"><span class="c2">Changes range hype to ray</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-1 start"><li class="c5 c15"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-2 start"><li class="c4"><span class="c2">Only those you want are restored</span></li><li class="c4"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-3 start"><li class="c5 c56"><span class="c2">Change range type to range burst</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _elemental">
+				<b>Shock</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Elemental</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ray</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Dancing Lights, Fire Starter</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target takes *A plus Bonus shock damage</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds *A to the damage</span></li><li class="c5 c19"><span class="c2">Change range time to &nbsp;Line </span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Change range type to Chain</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Change range type to wall</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Anyone successfully hit is still in shocked On the end of their turn they take another *A shock damage. This is a persistent condition</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">+ Add *A to fire damage</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Anyone successfully hit with shock are too much in shock to move properly and are Overburdened. This is a persistent condition</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Instead of in Overburdened, they are Disoriented</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Anyone targeted by this has a debuff equal to their armor buff if their armor is made of metal</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Anyone wearing armor that takes damage takes additional damage equal to the armor buff</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _arcane">
+				<b>Sleep</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Arcane</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ray</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Persistent</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Daze, Detect Magic</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target falls asleep until someone takes an action to awaken them or they receive damage</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_cce6pfg3kewv-0"><li class="c5 c19"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-1 start"><li class="c5 c15"><span class="c2">Only those you want are put to sleep</span></li><li class="c5 c15"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_cce6pfg3kewv-2 start"><li class="c4"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _nature">
+				<b>Summon Monster</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Nature</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c44" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c31" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A + bouns rounds (concentration)</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Message, detectmagic </span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">In targeted space, summon a creature with Threat Lvel 1</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Add *A rounds to duration</span></li><li class="c5 c19"><span class="c2">+ add one to monster points</span></li><li class="c5 c19"><span class="c2">Change range type to Ray</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _nature">
+				<b>Talk to Animals</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Duration</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Nature</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">*A minutes</span></p></td><td class="c18" colspan="1" rowspan="1"><p class="c0"><span class="c2">message</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Allows animals to answer simple questions</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Add *A minutes to duration</span></li><li class="c5 c19"><span class="c2">Change range type to Ray</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _arane">
+				<b>Teleport</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Arcane</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Meditate, mage hand</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Teleports willing creature *A Time 5 feet</span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Add *A times 5 feet to the teleport range</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Teleport up to *A miles to anywhere you have been before</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Teleport up to *A times 10 miles to anywhere you have been before</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">Teleport up to *A times 100 miles to anywhere you have been before</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-4 start"><li class="c5 c40"><span class="c2">Teleport to anywhere on the same plane</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-5 start"><li class="c5 c32"><span class="c2">Teleport to another plane</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2"><li class="c4"><span class="c2">You can teleport to anywhere where at least one creature you are teleporting has been before within range</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-3 start"><li class="c5 c56"><span class="c2">You can teleport to anywhere that was well described to you within range</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-4 start"><li class="c5 c40"><span class="c2">You can teleport to anywhere that was mentioned to you within range</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-5 start"><li class="c5 c32"><span class="c2">You can teleport anywhere you guest at withing range.</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">Change range type to burst, you can teleport *A number of willing creatures within your burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">+ Add *A number of willing creatures</span></li><li class="c5 c15"><span class="c2">Change range type to range burst</span></li></ul>
+				<hr>
+			</div>
+			<div class="filtered_object _black">
+				<b>Tire</b>
+				<table class="c9"><tbody><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Starting Level</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Action</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Range type</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Cantrip</span></p></td></tr><tr class="c6"><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Black</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">1</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Ray</span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bleed out</span></p></td></tr></tbody></table>
+				<p class="c5"><span class="c2">Target gains a level of exhaustion level. </span></p>
+				<p>Upgrades:</p>
+				<ul class="c12 lst-kix_7349ozil7dk6-0"><li class="c5 c19"><span class="c2">+ Adds one exhaustion level</span></li><li class="c5 c19"><span class="c2">Change range type to cone</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-1 start"><li class="c5 c15"><span class="c2">Only those you want are tired</span></li><li class="c5 c15"><span class="c2">Change range type to self burst</span></li></ul>
+				<ul class="c12 lst-kix_7349ozil7dk6-2 start"><li class="c4"><span class="c2">Change range type to range burst </span></li></ul>
+				<hr>
+			</div>
+		</div>
+		
+		<!-- ##################################################################################################################################### -->
+		
+		<div id=cantrips class="flippage" style="display:none">
+			<h1>Cantrips</h1>
+			<p class="c5"><span class="c2">Having a spell known, even an upgraded version, gives you certain Cantrip. Cantrips are spells that do not take from your Mana and con by use at any time. </span></p>
+			<table class="c9"><tbody><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c46">Name</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c46">Action</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c46">Skill</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c46">Challenge</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c46">Range</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c46">Description</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Bleed out</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">50 ft</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Target with 0 hit points or less becomes unstable</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Dancing Lights</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic Creation</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">ft/5</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">50 &nbsp;ft</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Create light that illuminates a room 10 times *A ft</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Dazed</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Mind Attack</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">Willpower </span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">50ft</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Target is Overencumbered until the start of your next turn</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c46">Detect Magic</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c46">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c46">Spell Craft</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c46">20 minus - spell level + days faded</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c46">50 ft cone</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c46">Can detect magic on an object and what type of magic. </span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Detect Poison</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Spell Craft</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">10</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">50ft cone</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Can detect what object has been poisoned or what person has been poisoned</span></p></td></tr>
+				<tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Fire Starter</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Minor</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">touch</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Start a small fire.</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c46">Guidance</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c46">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c46">Magic Support/ Mind Support</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c46">ft/2</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c46">50 ft</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c46">Target gets +1 on all checks for 1 minute</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Heat Metal</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic burst</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">Athletics</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">50 ft</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Target a metal object held by anyone. That person either drops the object or takes *A damage</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c46">Know Direction</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c46">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c46">Spell Craft</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c46">10</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0 c7"><span class="c46"></span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c46">Know which direction is north for *A hours</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Light</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic Creation</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">10</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">touch</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Object becomes a light source illuminating 10 times *A ft</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Mage Hand</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Spell Craft</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">5 times the pound</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Lift an object up to *A feet away from you for *A hours</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Meditate </span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td>
+					<td class="c21" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">You hover in place until you take damage or move. You gain a buff to all magic spell check equal to half your bonus</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Mend</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic Burst</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">10 </span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">Touch </span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Repair anything that has the broken condition</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Message</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Mind Support</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">ft/*A</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">any</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Send a short message as a whisper that only your target can hear. </span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Open/ close</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Spell Craft</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">10 + 5 for every size larger than medium</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">50 ft</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Open or close any thing that has a door</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Prestidigitation</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic Burst</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">10</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Create a minor non harmful spell</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Purify Nurishment</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Spell craft</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">10 </span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0 c7"><span class="c2"></span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Remove disease or poison from food or drinks</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Stabilize</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td>
+						<td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic Support</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">Negative hit points of target</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">200 ft</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Target become stable</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c2">Sutter</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c2">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c2">Magic Attack</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c2">Reflect (negate)</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c2">25 ft</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c2">Target’s weapon takes the damaged condition</span></p></td></tr><tr class="c6"><td class="c25" colspan="1" rowspan="1"><p class="c0"><span class="c46">Touch of Exhaustion</span></p></td><td class="c37" colspan="1" rowspan="1"><p class="c0"><span class="c46">Major</span></p></td><td class="c21" colspan="1" rowspan="1"><p class="c0"><span class="c46">Strike</span></p></td><td class="c20" colspan="1" rowspan="1"><p class="c0"><span class="c46">Dodge</span></p></td><td class="c48" colspan="1" rowspan="1"><p class="c0"><span class="c46">touch</span></p></td><td class="c36" colspan="1" rowspan="1"><p class="c0"><span class="c46">If Target has less exhaustion levels than *A, target gains one level of exhaustion</span></p></td></tr></tbody></table>
+		</div>
+		
+		<!-- ##################################################################################################################################### -->
+		
+		<div id=rules class="flippage" style="display:none" >
+			<h1>Spell Rules</h1>
+			<h1>Casting Spells</h1>
+			<p class="c5"><span class="c23">Mana. </span><span class="c2">Having any magic tier gives you magic mana. The amount of mana you have is equal to *A + Bonus + Total Magic Tiers. Total Magic Tier includes all tiers from magic feats.</span></p>
+			<p class="c5"><span class="c23">Spending Mana. </span><span class="c2">When you cast a spell, you spend an amount of mana equal to the Spell’s level. </span></p>
+			<p class="c5"><span class="c23">Running out of mana. </span><span class="c2">When you run out of mana, you can still cast spells but at a deeper cost. When you can spells that uses more mana that you use, your mana points will go into the negative. Anytime you cast a spell and have negative spell points, two things happen. First you lose hitpoints equal to the absolute value of your negative mana points, and gain a level of exhaustion.</span></p>
+			<p class="c5"><span class="c2">For example, If you have five mana then cast a fourth level spell, your mana becomes one. The next turn, if you cast the same level four spell, your mana will be negative three, you take three damage and gain an exhaustion level. The next turn, if you cast the same level four spell, your mana will be negative seven, you take seven damage and gain another exhaustion level.</span></p>
+			<p class="c5"><span class="c23">Concentration</span><span class="c2">. You can only cast one spell with a duration that has concentration at a time. Anytime you want to cast another one, you must release the previous one. </span></p>
+			<p class="c5"><span class="c2">When you have a spell with concentration running and take damage, you must make a concentration check vs the damage. If you fail, your spell ends.</span></p>
+			<p class="c5"><span class="c2">If you have 0 or less hit points, your spell with concentration ends</span></p>
+<p class="c5"><span class="c23">Reactions. </span><span>When someone casts a spell within 5 feet of you, you can use an attack of opportunity.</span><p class="c5"><span class="c2">If you have 0 or less hit points, your spell with concentration ends</span></p></p>			
+			
+			<h1>Casting Magic</h1>
+			<b>Spell Tiers</b>
+			<p class="c5"><span class="c2">The retirement for any tier is the tier equal to your *A (=*A). There are five types of magic tiers. You must select each one as a separate tier when picking your tiers. You must upgrade each magic type separately as well. Each magic type counts as their own feat: Arcane Black Elemental Holy and Nature </span></p>
+			<b>Spells Known</b>
+			<p class="c5"><span class="c2">Having any Spells Known gives you a number of spells you know. This number is equal to *I + Bonus + Total Magic Tiers. Total Magic Tier includes all tiers from magic feats</span></p>
+			<p class="c5"><span class="c2">There are 5 types of magic. You can only add spells to Spells Known if you have Tier in that magic type: Arcane Black Elemental Holy and Nature </span></p>
+			<p class="c5"><span class="c2">You can only add a spell to spells Known if the spell level is equal to or less than the tier you have.</span></p>
+			<p class="c5"><span class="c2">You do not have to fill spells known right away. You can add spells anytime as long as you haven’t filled the list. It takes one minute per spell level to add a spell to spells known</span></p>
+			<b>Types of Damage</b>
+			<p>Elemental: Acid Cold Electric Fire Pressure and Sonic</p>
+			<p>Non Elemental: Necrotic and Psychic</p>
+		</div>
+		
+		<!-- ##################################################################################################################################### -->
+		
+		<div id=creation class="flippage" style="display:none" >
+			<h1>Spell Creation</h1>
+			<h1>Upgrades</h1>
+			<p class="c5"><span class="c2">All spells have a starting level. Each spell can be upgraded to a new spell. The Spell Level of that new spell equals the starting level plus how many upgrades the spell has. Some upgrades require you to select the previous upgrades. You can tell by the way it is listed. </span></p>
+			<p class="c5"><span class="c2">This is a new spell added to your Spells Known. This spell also requires a new name. </span></p>
+			<p class="c5"><span class="c2">Two Upgrades all spells have are Silent and motionless. Since all spells require you to speak and move your hand. Silent removes the sonic component and motionless lets removes the motion portion. </span></p>
+			<p class="c5"><span class="c2">Upgrades with the ‘+’ symbol can be taken as many times as you want. </span></p>
+			<h1>Spell Range Type</h1>
+			<p class="c5"><span class="c2">All spells have one range type. When you upgrade to a new range type, you remove the previous version. Each range type has its own upgrades you can add. </span></p>
+			<p class="c5"><span class="c2">If harmful, each range type has its own way of attacking and requires the attacker and defender to roll certain skill checks. When the defender wins, they either do not take effect (negate) or takes half damage if damage is dealt (half). If helpful, it has a skill check vs a different number</span></p>
+			 <hr>
+			 <b>Chain</b>
+			 <p class="c5"><span class="c23">Harmful deals damage: </span><span class="c2">Magic Attack vs Dodge (negate)</span></p>
+			 <p class="c5"><span class="c23">Harmful does not deal damage: </span><span class="c2">(Magic Burst vs Willpower)</span><p class="c5"><span class="c23">Harmful deals damage: </span><span class="c2">Magic Attack vs Dodge (negate)</span></p></p>
+			 <p class="c5"><span class="c23">Helpful:</span><span class="c2">&nbsp;Magic Support vs 15</span></p>
+			 <p class="c5"><span class="c23">Description:</span><span>Starting from you, Magic effects all in a 100 ft line with a width of 5 ft. The line and twist and turn as you desire as long as it has a length of 100 ft</span></p>
+			 <p class="c5"><span class="c8">Upgrades</span></p>
+			 <ul class="c12 lst-kix_w5rb5ckibw6u-0 start"><li class="c5 c19"><span class="c2">+ add 10 ft to line</span></li></ul>
+			 <hr>
+			 <b>Cone</b>
+			 <p class="c5"><span class="c23">Harmful deals damage: </span><span class="c2">Magic Burst vs Reflex (half)</span></p>
+			 <p class="c5"><span class="c23">Harmful does not deal damage: </span><span>(Magic Burst vs Willpower)</span></p>
+			 <p class="c5"><span class="c23">Helpful:</span><span class="c2">&nbsp;Magic Support vs 10 plus 1 for every 5 &nbsp;ft of cone</span></p>
+			 <p class="c5"><span class="c23">Description: </span><span>Starting from you, you make a cone with a 90 degrees</span><span class="c23">&nbsp;</span><span class="c2">arc. The reach is 15 ft. </span></p>
+			 <p class="c5"><span class="c8">Upgrades</span></p>
+			 <ul class="c12 lst-kix_w5rb5ckibw6u-0"><li class="c5 c19"><span class="c2">+ add 10 ft to cone</span></li></ul>
+			 <hr>
+			<b>Line</b>
+			<p class="c5"><span class="c23">Harmful deals damage: </span><span class="c2">Magic Attack vs Dodge (negate)</span></p>
+			<p class="c5"><span class="c23">Harmful does not deal damage: </span><span class="c2">(Magic Burst vs Willpower)</span></p>
+			<p class="c5"><span class="c23">Helpful:</span><span class="c2">&nbsp;Magic Support vs 15</span></p>
+			<p class="c5"><span class="c23">Description: </span><span class="c2">Starting from you, Magic effects all in a straight 100 ft line with a width of 5 ft</span></p>
+			<p class="c5"><span class="c8">Upgrades</span></p>
+			<ul class="c12 lst-kix_w5rb5ckibw6u-0"><li class="c5 c19"><span class="c2">+ add 20 ft to line</span></li></ul>
+			<b>Range Burst</b>
+			<p class="c5"><span class="c23">Harmful deals damage: </span><span class="c2">&nbsp;(Magic Burst vs Reflex for half)</span></p>
+			<p class="c5"><span class="c23">Harmful does not deal damage: </span><span class="c2">(Magic Burst vs Willpower)</span></p>
+			<p class="c5"><span class="c23">Helpful:</span><span class="c2">&nbsp;Magic Support vs 10 plus 1 for every 5 feet of the center of the burst</span></p>
+			<p class="c5"><span class="c23">Description:</span><span class="c2">&nbsp;A cube attack is made with a target within reach as the center. The range where you set the center is 100 ft. From that center, the effect is a cube 10 ft in all directions. If this is a harmful magic, then you can be in effect.</span></p>
+			<ul class="c12 lst-kix_83avcxmmvlan-0 start"><li class="c5 c19"><span class="c2">+ Add 5 ft to burst</span></li><li class="c5 c19"><span class="c2">+ 20 ft of the range</span></li></ul>
+			<hr>
+			<b>Ray</b>
+			<p class="c5"><span class="c23">Harmful deals damage: </span><span class="c2">&nbsp;(Magic Attack vs Dodge (negate)</span></p>
+			<p class="c5"><span class="c23">Harmful does not deal damage: </span><span class="c2">(Magic Burst vs Willpower)</span></p>
+			<p class="c5"><span class="c23">Helpful:</span><span class="c2">&nbsp;Magic Support vs 10 plus &nbsp;1 for every 5 feet of the target</span></p>
+			<p class="c5"><span class="c23">Description:</span><span class="c2">&nbsp;Target something you see within 100 ft</span></p>
+			<ul class="c12 lst-kix_83avcxmmvlan-0"><li class="c5 c19"><span class="c2">+ 20 ft of the range</span></li></ul>
+			<hr>
+			<b>Self Burst</b>
+			<p class="c5"><span class="c23">Harmful deals damage: </span><span class="c2">(Magic Burst vs Reflex for half)</span></p>
+			<p class="c5"><span class="c23">Harmful does not deal damage: </span><span class="c2">(Magic Burst vs Willpower)</span></p>
+			<p class="c5"><span class="c23">Helpful:</span><span class="c2">&nbsp;Magic Support vs 10 plus &nbsp;1 for every 5 ft of the burst</span></p>
+			<p class="c5"><span class="c23">Description:</span><span class="c2">&nbsp;A cube attack is made with you as the center. From that your location, the effect is a cube 10 ft in all directions. If this is a harmful magic, then you not can be in effect.</span><p class="c5"><span class="c23">Description:</span><span class="c2">&nbsp;A cube attack is made with you as the center. From that your location, the effect is a cube 10 ft in all directions. If this is a harmful magic, then you not can be in effect.</span></p></p>
+			<ul class="c12 lst-kix_83avcxmmvlan-0"><li class="c5 c19"><span class="c2">+ Add 5 feet to burst</span></li></ul>
+			<hr>
+			<b>Touch</b>
+			<p class="c5"><span class="c23">Harmful deals damage: </span><span class="c2">Strike vs Dodge (negate)</span></p>
+			<p class="c5"><span class="c23">Harmful does not deal damage: </span><span class="c2">(Strike vs Willpower)</span></p>
+			<p class="c5"><span class="c23">Helpful:</span><span class="c2">&nbsp;Magic Support vs 15</span></p>
+			<p class="c5"><span class="c23">Description:</span><span class="c2">&nbsp;You need to physically touch the thing you wish to cast the spell on</span></p>
+			<hr>
+			<b>Wall</b>
+			<p class="c5"><span class="c23">Harmful: </span><span class="c2">(Magic Burst vs Reflex for half)</span></p>
+			<p class="c5"><span class="c23">Helpful:</span><span class="c2">&nbsp;Magic Support vs 10 plus 1 for every 5 feet of the center of the burst</span></p>
+			<p class="c5"><span class="c23">Description:</span><span class="c2">&nbsp;Create a lasting wall. The range where you set the center is 100 ft. From that center, the length and height of the wall is 50 ft. The wide is 5 ft. If it is a harmful spell, anyone in the wall trying to enter the wall take an effect descriptive in the spell. The wall lasts *A plus bonus. If harmful, anyone within the wall is pushed to a side they wish to be.</span></p>
+			<ul class="c12 lst-kix_6v23x9qefj7r-0 start"><li class="c5 c19"><span class="c2">+ add A turns to the duration</span></li><li class="c5 c19"><span class="c2">+ add 10 ft to wall</span></li><li class="c5 c19"><span class="c2">+ add 5 ft to width</span></li><li class="c5 c19"><span class="c2">+ add 20 ft to the range</span></li></ul>
+			 <hr>
+		</div>
+	</main>
+</body>
+</html>
