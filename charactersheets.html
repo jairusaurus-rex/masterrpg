@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="themes/styles.css">
+<link rel="stylesheet" href="themes/old.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="javascript/flipper.js"></script>
+
+</head>
+<body>
+	<aside>
+		<b> Menu </b>
+		<p><strong> Core Features</strong></p>
+		<a href="https://jairusaurus-rex.github.io/masterrpg/index.html"><p>Main</p></a>
+		<a href="charactersheets.html"><p>Character Sheets</p></a>
+		<a href="gameplay.html"><p>Gameplay</p></a>
+		<a href="abilities-stats.html"><p>Abilities and Stats</p></a>
+		<a href="skills.html"><p>Skills</p></a>
+		<a href="feats.html"><p>Feats</p></a>
+		<a href="gear.html"><p>Gear</p></a>
+		<a href="weakness.html"><p>Weaknesses</p></a>
+		<a href="creatures.html"><p>Creatures</p></a>
+		<p><strong> Book 2: Magic and Fantasy Exclusives</strong></p>
+		<a href="spells.html"><p>Magic and Spells</p></a>
+		<a href="magicalsource.html"><p>Magical Source</p></a>
+		<a href="mythicalrace.html"><p>Mythical Race</p></a>
+	</aside>
+	<main>
+		<h1>Character Sheets</h1>
+		<div class="space_around">
+			<button onclick="flip('pdf')">PDF </button>
+			<button onclick="flip('spreadsheet');">Google Spread Sheet</button>
+		</div>
+		<div id=pdf class="flippage">
+			<br>
+			<a href="pdfs/EdibleCharacterSheet.pdf" target="_blank" download>
+			  Download Now
+			</a>
+			<embed src="pdfs/EdibleCharacterSheet.pdf" width="700px" height="400px" />
+		</div>
+		<div id=spreadsheet class="flippage"  style="display:none">
+			<p> Go to "File" > "Make a copy" to make your own copy of the google sheet below so you can edit it</p>
+			<p> Green fields will auto fill</p>
+			
+			<a href="https://docs.google.com/spreadsheets/d/1r6L7VePgVvbNYg9hXLzUmmYMBUUoo1E4qslsOmjO-Qs/edit?usp=sharing" target="_blank" download>
+			  Google Character Sheet
+			</a>
+		</div>
+	</main>
+</body>
+</html>
+		
