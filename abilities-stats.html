@@ -126,7 +126,22 @@
 			<div title="[(Level * Bonus * 50) + (10 * (Intelligence + Wit + Charisma))]"><p>Starting Wealth = <span id="wealth_display"></span></p></div>
 		</div><div>
 			<h1> Book 2: Magic and Fantasy</h1>
-			<div title="[Intelligence + Bonus]"><p>Spells Known = <span id="spells_known_display"></span></p></div><div title="[Aura + Bonus]"><p> Spell Mana = <span id="spells_mana_display"></span></p></div><div title="[Aura + Bonus]"><p> Worthy = <span id="worthy_display"></span></p>
+			<div class="space_around">
+				Magical Source = <select name="Source_input" id="source_input" onchange="changeEverything()">
+				  			  	<option value="none">---</option>
+								<option value="Totem">Totem</option>
+								<option value="Familiar">Familiar</option>
+								<option value="Spellbook">Spellbook</option>
+								<option value="Pact">Pact</option>
+								<option value="Bloodline">Bloodline</option>
+								<option value="Prodigy">Prodigy</option>
+							</select>
+				<p>level = <input id="spells_input" type=number max="20" min="0" onchange="changeEverything()" value=0></p>
+			</div>
+<div title="[Intelligence + Bonus + Magical Source + # of magic feats (Arcane, Black, Elemental, Holy, Nature]"><p>Spells Known = <span id="spells_known_display"></span></p></div>
+<div title="[Aura + Bonus + Magical Source + # of magic feats (Arcane, Black, Elemental, Holy, Nature)]"><p> Spell Mana = <span id="spells_mana_display"></span></p></div>
+<div title="[Stamina + Magical Source]"><p> Mana Recovery = <span id="recovery_mana_display"></span></p></div>
+<div title="[Aura + Bonus]"><p> Worthy = <span id="worthy_display"></span></p>
 			</div>
 		</div>
 		</div>
