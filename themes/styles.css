@@ -1,7 +1,24 @@
+header{
+	width:910px;
+	margin:auto;
+	margin-bottom:10px;
+	border: solid;
+	text-align:center;
+	background-color:#a2c0ff;
+	
+}
+header p{
+	font-size:4em;
+	text-align:center;
+	padding:0px;
+	margin:0px;
+}
 body{
+	background-color:#003380;
+}
+#main_wrapper{
 	display: flex;
 	justify-content :center;
-	background-color:#003380;
 }
 aside{
 	width: 150px;
