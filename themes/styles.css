@@ -64,3 +64,14 @@ button{
 	color:white;
 	background-color:#003380;
 }
+table, td, th {
+  border: 1px solid black;
+   border-collapse: collapse;
+   border-spacing: 0 50px;
+   padding:30px;
+   
+}
+
+.personal{
+	text-align:center;
+}

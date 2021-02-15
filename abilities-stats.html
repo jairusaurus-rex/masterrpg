@@ -36,9 +36,12 @@
 		<h1>Abilities and Stats</h1>
 		<br>
 		<div class="space_around">
-			<button onclick="flip('calc')">Calculator </button><button onclick="flip('rules');">Rules</button>
+			<button onclick="flip('calc')">Calculator </button>
+			<button onclick="flip('rules');">Rules for Abilities</button>
+			<button onclick="flip('stats');">Rules for Stats</button>
 		</div>
 		<div id=rules class="flippage"  style="display:none">
+			<h1>Ability Rules </h1>
 			<p >There are 8 ability scores in the game. They aid different skills and are needed to gain some feats. You have points for abilities equal to 20 plus your bonus plus your level. You can save some of these points in reserve or use them once you level up to level up any of those 8 abilities. You can only transfer from reserve to upgrade ability scores when you level up.</p>
 			<p >Each upgrade ability has a cost. By default, the cost is the number you are going to. If you have a strength of 5 you need to spend 6 points in your ability reserve to bring your strength to 6. This makes it easy to have low ability scores but hard to have high ability scores. </p>
 			<p> When levelling up, you can upgrade any number of ability scores and upgrade them any to any amount as long as you can afford each change form you reserve. </p>
@@ -54,6 +57,59 @@
 			<p class="c4"><span class="c6">Aura - summon a tomato</span></p>
 			<table class="c27"><tbody><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">New Levels </span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">Cost from the previous Levels</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">Cost from level 0</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">0</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">0</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">0</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">1</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">1</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">1</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">2</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">2</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">3</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">3</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">3</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">6</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">4</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">4</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">10</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">5</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">5</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">15</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">6</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">6</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">21</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">7</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">7</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">28</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">8</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">8</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">36</span></p></td></tr><tr class="c11"><td class="c22" colspan="1" rowspan="1"><p class="c0"><span class="c6">9</span></p></td><td class="c23" colspan="1" rowspan="1"><p class="c0"><span class="c6">9</span></p></td><td class="c24" colspan="1" rowspan="1"><p class="c0"><span class="c6">45</span></p></td></tr></tbody></table>
 			
+			<p>Each ability score will have a number that is greater than or equal to 0. 1 is what the average person would have in the world. The below chart represents what each number means in the world</p>
+			<table class="personal">
+				<tr>
+					<th style=" width:5%;"><p>#</p></th>
+					<th style=" width:20%;"><p>Represents</p></th>
+					<th><p>Description</p></th>
+				</tr>
+				<tr>
+					<td><p>0</p></td>
+					<td><p>Below Average</p></td>
+					<td><p>Many people in the world have this, the ability is weaker then most in the area but not uncommon</p></td>
+				</tr>
+				<tr>
+					<td><p>1</p></td>
+					<td><p>Average</p></td>
+					<td><p>Most people have the ability at this number</p></td>
+				</tr>
+				<tr>
+					<td><p>2</p></td>
+					<td><p>Above Average</p></td>
+					<td><p>Some people in the area have this number for that ability. People living in the area know who has this number for that ability</p></td>
+				</tr>
+				<tr>
+					<td><p>3</p></td>
+					<td><p>Noticeably above average</p></td>
+					<td><p>In a short amount of time, people will notice your ability is higher than average</p></td>
+				</tr>
+				<tr>
+					<td><p>4</p></td>
+					<td><p>Massively Impressive</p></td>
+					<td><p>People will believe you are the most impressive ability stat they will see in their lives</p></td>
+				</tr>
+				<tr>
+					<td><p>5</td>
+					<td><p>World’s Best</td>
+					<td><p>People will believe there are no, or very little people that have your ability stat</td>
+				</tr>
+				<tr>
+					<td><p>6</p></td>
+					<td><p>Unbelievable</p></td>
+					<td><p>If a person witnesses your ability stat and tells of it later, it will be hard for people to believe</p></td>
+				</tr>
+				<tr>
+					<td><p>7+</p></td>
+					<td><p>Super Human</p></td>
+					<td><p>Your ability stat is beyond what normal people could ever have</p></td>
+				</tr>
+			</table>
+					<br><br>
+		</div>
+		<!-- ##################################################################################################################################### --><td>
+			<div id=stats class="flippage"  style="display:none">
+				<h1> Stat Rules</h1>
 			<h1> Book 1: Core</h1>
 			<p class="c4"><span class="c6">When you level up, your stats will change (such as your health or carry capacity). Stats will change when you level up, gain more character bonuses, gain feats, or change your ability score. The default of those calculations are found below</span></p>
 			<p class="c4"><span class="c6">Max Hit Points = 10 + level + G * Bonus</span></p>
